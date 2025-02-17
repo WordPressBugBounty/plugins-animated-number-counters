@@ -1,21 +1,23 @@
 <?php
 
 /*
-  Plugin Name: Animated Number Counter
+  Plugin Name: Animated Number Counters
   Plugin URI: https://wordpress.org/plugins/animated-number-counters
   Description: Animated Number Counter is a powerful &amp; robust but easy to represent your team/staff members and their profiles with animated &amp; beautiful styled descriptions, skills &amp; links to social media.
   Author: Sk. Abul Hasan
   Author URI: http://www.wpmart.org/
   Text Domain: animated-number-counters
   Domain Path: /languages
-  Version: 2.0
+  License: GPL-2.0-or-later
+  License URI: https://www.gnu.org/licenses/gpl-2.0.html
+  Version: 2.1
  */
 if (!defined('ABSPATH'))
    exit;
 
 define('anc_6310_plugin_url', plugin_dir_path(__FILE__));
 define('anc_6310_plugin_dir_url', plugin_dir_url(__FILE__));
-define ('anc_6310_PLUGIN_CURRENT_VERSION', 2.0);
+define ('anc_6310_PLUGIN_CURRENT_VERSION', 2.1);
 define( 'ANC_6310_PLUGIN_LANGUAGE_PATH', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 

@@ -24,10 +24,18 @@ function anc_6310_counter_01_10()
     $template_name = $styledata['style_name'];
     $allowed_templates = [];
     for ($i = 1; $i <= 30; $i++) {
-       $allowed_templates[] = sprintf('counter-%02d', $i);
+      $allowed_templates[] = sprintf('counter-%02d', $i);
     }
     if (!in_array($template_name, $allowed_templates)) {
       die('Invalid template selected.');
+    }
+
+    $template_path = realpath(anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php');
+    $allowed_path = realpath(anc_6310_plugin_url . 'settings/counters/');
+
+    // Ensure the resolved path is within the allowed directory
+    if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path)) {
+      die('Invalid template path or file not found.');
     }
 
     anc_6310_no_preview_available();
@@ -36,7 +44,7 @@ function anc_6310_counter_01_10()
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include anc_6310_plugin_url . 'settings/counters/' . esc_attr($template_name) . '.php';
+    include $allowed_path;
   }
 }
 
@@ -64,11 +72,20 @@ function anc_6310_counter_11_20()
     $template_name = $styledata['style_name'];
     $allowed_templates = [];
     for ($i = 1; $i <= 30; $i++) {
-       $allowed_templates[] = sprintf('counter-%02d', $i);
+      $allowed_templates[] = sprintf('counter-%02d', $i);
     }
     if (!in_array($template_name, $allowed_templates)) {
       die('Invalid template selected.');
     }
+
+    $template_path = realpath(anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php');
+    $allowed_path = realpath(anc_6310_plugin_url . 'settings/counters/');
+
+    // Ensure the resolved path is within the allowed directory
+    if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path)) {
+      die('Invalid template path or file not found.');
+    }
+
 
     anc_6310_no_preview_available();
     wp_enqueue_script('anc-6310-font-select-js', plugins_url('assets/js/fontselect.js', __FILE__), array('jquery'));
@@ -76,7 +93,7 @@ function anc_6310_counter_11_20()
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include anc_6310_plugin_url . 'settings/counters/' . esc_attr($template_name) . '.php';
+    include $allowed_path;
   }
 }
 
@@ -104,10 +121,18 @@ function anc_6310_counter_21_30()
     $template_name = $styledata['style_name'];
     $allowed_templates = [];
     for ($i = 1; $i <= 30; $i++) {
-       $allowed_templates[] = sprintf('counter-%02d', $i);
+      $allowed_templates[] = sprintf('counter-%02d', $i);
     }
     if (!in_array($template_name, $allowed_templates)) {
       die('Invalid template selected.');
+    }
+
+    $template_path = realpath(anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php');
+    $allowed_path = realpath(anc_6310_plugin_url . 'settings/counters/');
+
+    // Ensure the resolved path is within the allowed directory
+    if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path)) {
+      die('Invalid template path or file not found.');
     }
 
     anc_6310_no_preview_available();
@@ -116,7 +141,7 @@ function anc_6310_counter_21_30()
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include anc_6310_plugin_url . 'settings/counters/' . esc_attr($template_name) . '.php';
+    include $allowed_path;
   }
 }
 
@@ -147,11 +172,11 @@ function anc_6310_counter_add_edit()
   global $wpdb;
   wp_enqueue_style('anc-6310-style', plugins_url('assets/css/style.css', __FILE__));
 
-   anc_6310_link_css_js();
-   wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-   include anc_6310_plugin_url . 'header.php';
-   include anc_6310_plugin_url . 'settings/counter.php';
-   anc_6310_multi_language_set_all_data();
+  anc_6310_link_css_js();
+  wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
+  include anc_6310_plugin_url . 'header.php';
+  include anc_6310_plugin_url . 'settings/counter.php';
+  anc_6310_multi_language_set_all_data();
 }
 
 function anc_6310_number_counter_6310_how_to_use()
