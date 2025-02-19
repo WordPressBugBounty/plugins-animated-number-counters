@@ -10,14 +10,14 @@
   Domain Path: /languages
   License: GPL-2.0-or-later
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
-  Version: 2.1
+  Version: 2.2
  */
 if (!defined('ABSPATH'))
    exit;
 
 define('anc_6310_plugin_url', plugin_dir_path(__FILE__));
 define('anc_6310_plugin_dir_url', plugin_dir_url(__FILE__));
-define ('anc_6310_PLUGIN_CURRENT_VERSION', 2.1);
+define ('anc_6310_PLUGIN_CURRENT_VERSION', 2.2);
 define( 'ANC_6310_PLUGIN_LANGUAGE_PATH', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 

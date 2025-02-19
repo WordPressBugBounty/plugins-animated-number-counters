@@ -44,7 +44,7 @@ function anc_6310_counter_01_10()
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include $allowed_path;
+    include $template_path;
   }
 }
 
@@ -93,7 +93,7 @@ function anc_6310_counter_11_20()
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include $allowed_path;
+    include $template_path;
   }
 }
 
@@ -141,7 +141,7 @@ function anc_6310_counter_21_30()
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include $allowed_path;
+    include $template_path;
   }
 }
 
