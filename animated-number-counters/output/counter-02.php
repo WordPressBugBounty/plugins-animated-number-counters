@@ -22,7 +22,7 @@
                                     data-anc-6310-end="<?php echo esc_attr($allCounter['numbers']); ?>" 
                                     data-anc-6310-decimal="<?php echo esc_attr(anc_6310_number_format($allCounter['numbers'])); ?>" 
                                     data-anc-6310-duration=".5" 
-                                    data-anc-6310-thousands-separator=","
+                                    data-anc-6310-thousands-separator="<?php echo isset($cssData['thousands_separator']) ? esc_attr(anc_6310_special_character_remove($cssData['thousands_separator'])) : '' ?>"
                                 >
                                         0
                                     </div>

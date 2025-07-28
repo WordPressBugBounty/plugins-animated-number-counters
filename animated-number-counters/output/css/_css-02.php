@@ -133,7 +133,7 @@
     display: inline-block;
     font-family: ".str_replace("+", " ", esc_attr($cssData['number_font_family'])).";
     font-weight: ".esc_attr($cssData['number_font_weight']).";
-    font-size: 35px;
+    font-size: ".esc_attr($cssData['number_font_size'])."px;
     color: rgb(255, 255, 255);
     line-height: ".esc_attr($cssData['number_line_height'])."px;
   }

@@ -36,8 +36,7 @@ wp_enqueue_media();
               </tr>
                <tr height="45">
                 <td>
-                  <b>Thousands separator</b> <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span>
-                  <div class="anc-6310-tooltip">(No preview available)</div>
+                  <b>Thousands separator</b>
                 </td>
                 <td>
                   <input type="text" name="thousands_separator" value="<?php echo isset($cssData['thousands_separator']) ? esc_html(anc_6310_special_character_remove($cssData['thousands_separator'])) : ',' ?>" class="anc-6310-form-input" />
@@ -415,7 +414,7 @@ wp_enqueue_media();
           <div class="anc-6310-tab-6">
             <table class="table table-responsive anc_6310_admin_table">
               <tr height="45">
-                <td width='55%'><b>Number Font Size</b> <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span></td>
+                <td width='55%'><b>Number Font Size</b></td>
                 <td>
                   <input type="number" min="0" name="number_font_size" value="<?php echo isset($cssData['number_font_size']) && esc_attr($cssData['number_font_size']) !== '' ? esc_attr($cssData['number_font_size']) : 35; ?>" class="anc-6310-form-input" id="anc_6310_number_font_size" />
                 </td>

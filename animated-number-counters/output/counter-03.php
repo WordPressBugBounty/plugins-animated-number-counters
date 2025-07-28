@@ -16,7 +16,7 @@
                             </div>
                             <div class="anc-6310-counter-<?php echo esc_attr($ids); ?>-count-content-inner">
                                 <div class="anc-6310-counter-<?php echo esc_attr($ids); ?>-count-content">
-                                    <div class="anc-6310-counter-<?php echo esc_attr($ids); ?>-count-number anc-6310-counter-number" id="anc-6310-<?php echo esc_attr("{$ids}-{$allCounter['id']}"); ?>" data-anc-6310-start="0" data-anc-6310-end="<?php echo esc_attr($allCounter['numbers']); ?>" data-anc-6310-decimal="<?php echo esc_attr(anc_6310_number_format($allCounter['numbers'])); ?>" data-anc-6310-duration=".5" data-anc-6310-thousands-separator=",">
+                                    <div class="anc-6310-counter-<?php echo esc_attr($ids); ?>-count-number anc-6310-counter-number" id="anc-6310-<?php echo esc_attr("{$ids}-{$allCounter['id']}"); ?>" data-anc-6310-start="0" data-anc-6310-end="<?php echo esc_attr($allCounter['numbers']); ?>" data-anc-6310-decimal="<?php echo esc_attr(anc_6310_number_format($allCounter['numbers'])); ?>" data-anc-6310-duration=".5" data-anc-6310-thousands-separator="<?php echo isset($cssData['thousands_separator']) ? esc_attr(anc_6310_special_character_remove($cssData['thousands_separator'])) : '' ?>">
                                         0
                                     </div>
                                 </div>

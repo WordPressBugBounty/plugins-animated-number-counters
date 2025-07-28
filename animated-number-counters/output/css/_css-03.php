@@ -117,7 +117,7 @@
     }
     .anc-6310-counter-".esc_attr($ids)."-count-number {
         display: inline-block;
-        font-size: 40px;
+        font-size: ".esc_attr($cssData['number_font_size'])."px;
         color: rgb(255, 255, 255);
         font-family: ".str_replace("+", " ", esc_attr($cssData['number_font_family'])).";
         font-weight: ".esc_attr($cssData['number_font_weight']).";

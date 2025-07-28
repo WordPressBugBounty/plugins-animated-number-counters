@@ -23,18 +23,18 @@
               <tr height="45">
                 <td>
                   <b>Animation Duration</b>
-                  <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span><div class="anc-6310-tooltip">(No preview available)</div>
+                  <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span>
+                  <div class="anc-6310-tooltip">(No preview available)</div>
                 </td>
                 <td>
                   <?php
-                    anc_6310_animation_duration(isset($cssData['animation_duration']) && $cssData['animation_duration'] !== '' ? esc_attr($cssData['animation_duration']) : 500);
+                  anc_6310_animation_duration(isset($cssData['animation_duration']) && $cssData['animation_duration'] !== '' ? esc_attr($cssData['animation_duration']) : 500);
                   ?>
                 </td>
-              </tr>  
+              </tr>
               <tr height="45">
                 <td>
-                  <b>Thousands separator</b> <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span>
-                  <div class="anc-6310-tooltip">(No preview available)</div>
+                  <b>Thousands separator</b>
                 </td>
                 <td>
                   <input type="text" name="thousands_separator" value="<?php echo isset($cssData['thousands_separator']) ? esc_html(anc_6310_special_character_remove($cssData['thousands_separator'])) : ',' ?>" class="anc-6310-form-input" />
@@ -58,12 +58,12 @@
                   <input type="number" min="0" name="box_radius" value="<?php echo esc_attr($cssData['box_radius']) ?>" class="anc-6310-form-input" id="anc_6310_box_radius" />
                 </td>
               </tr>
-              
+
             </table>
           </div>
           <div class="anc-6310-tab-6">
             <table class="table table-responsive anc_6310_admin_table">
-            <tr height="45">
+              <tr height="45">
                 <td><b>Box Border Width</b> <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span></td>
                 <td>
                   <input type="number" min="0" name="box_border_width" value="<?php echo esc_attr($cssData['box_border_width']) ?>" class="anc-6310-form-input" id="anc_6310_box_border_width" />
@@ -105,8 +105,8 @@
                   <input type="text" name="box_shadow_hover_color" id="anc_6310_box_shadow_hover_color" class="anc-6310-form-input anc_6310_color_picker" data-opacity=".4" data-format="rgb" value="<?php echo esc_attr($cssData['box_shadow_hover_color']) ?>">
                 </td>
               </tr>
-              <?php                 
-                anc_6310_background_setting($bgType, $cssData);
+              <?php
+              anc_6310_background_setting($bgType, $cssData);
               ?>
             </table>
           </div>
@@ -413,9 +413,7 @@
             <table class="table table-responsive anc_6310_admin_table">
               <tr height="45">
                 <td width='55%'><b>Font Size</b> <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span></td>
-                <td>
-                  <input type="number" min="0" name="number_font_size" value="<?php echo esc_attr($cssData['number_font_size']) ?>" class="anc-6310-form-input" id="anc_6310_number_font_size" />
-                </td>
+                <td width='55%'><b>Font Size</b></td>
               </tr>
               <tr height="45">
                 <td><b>Line Height</b> <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span></td>
@@ -601,7 +599,7 @@
                 <td width='55%'><b>Font Weight</b> <span class="anc-6310-pro">(Pro) <div class="anc-6310-pro-text">This feature is available on the pro version only. You can view changes in the admin panel, not in the output.</div></span></td>
                 <td>
                   <select name="number_suffix_font_weight" class="anc-6310-form-input" id="anc_6310_number_suffix_font_weight">
-                  <option value="100" <?php if (isset($cssData['number_suffix_font_weight']) && $cssData['number_prefix_font_weight'] == '100') echo " selected=''" ?>>100</option>
+                    <option value="100" <?php if (isset($cssData['number_suffix_font_weight']) && $cssData['number_prefix_font_weight'] == '100') echo " selected=''" ?>>100</option>
                     <option value="200" <?php if (isset($cssData['number_suffix_font_weight']) && esc_attr($cssData['number_prefix_font_weight']) == '200') echo " selected=''" ?>>200</option>
                     <option value="300" <?php if (isset($cssData['number_suffix_font_weight']) && esc_attr($cssData['number_prefix_font_weight']) == '300') echo " selected=''" ?>>300</option>
                     <option value="400" <?php if (isset($cssData['number_suffix_font_weight']) && esc_attr($cssData['number_prefix_font_weight']) == '400') echo " selected=''" ?>>400</option>

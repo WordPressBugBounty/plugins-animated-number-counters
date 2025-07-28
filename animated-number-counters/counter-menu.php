@@ -30,21 +30,13 @@ function anc_6310_counter_01_10()
       die('Invalid template selected.');
     }
 
-    $template_path = realpath(anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php');
-    $allowed_path = realpath(anc_6310_plugin_url . 'settings/counters/');
-
-    // Ensure the resolved path is within the allowed directory
-    if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path)) {
-      die('Invalid template path or file not found.');
-    }
-
     anc_6310_no_preview_available();
     wp_enqueue_script('anc-6310-font-select-js', plugins_url('assets/js/fontselect.js', __FILE__), array('jquery'));
     wp_enqueue_script('anc-6310-admin-js', plugins_url('assets/js/anc-6310-admin-script.js', __FILE__), array('jquery'));
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include $template_path;
+    include anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php';
   }
 }
 
@@ -78,22 +70,13 @@ function anc_6310_counter_11_20()
       die('Invalid template selected.');
     }
 
-    $template_path = realpath(anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php');
-    $allowed_path = realpath(anc_6310_plugin_url . 'settings/counters/');
-
-    // Ensure the resolved path is within the allowed directory
-    if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path)) {
-      die('Invalid template path or file not found.');
-    }
-
-
     anc_6310_no_preview_available();
     wp_enqueue_script('anc-6310-font-select-js', plugins_url('assets/js/fontselect.js', __FILE__), array('jquery'));
     wp_enqueue_script('anc-6310-admin-js', plugins_url('assets/js/anc-6310-admin-script.js', __FILE__), array('jquery'));
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include $template_path;
+    include anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php';
   }
 }
 
@@ -127,21 +110,13 @@ function anc_6310_counter_21_30()
       die('Invalid template selected.');
     }
 
-    $template_path = realpath(anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php');
-    $allowed_path = realpath(anc_6310_plugin_url . 'settings/counters/');
-
-    // Ensure the resolved path is within the allowed directory
-    if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path)) {
-      die('Invalid template path or file not found.');
-    }
-
     anc_6310_no_preview_available();
     wp_enqueue_script('anc-6310-font-select-js', plugins_url('assets/js/fontselect.js', __FILE__), array('jquery'));
     wp_enqueue_script('anc-6310-admin-js', plugins_url('assets/js/anc-6310-admin-script.js', __FILE__), array('jquery'));
     wp_enqueue_style('anc-6310-font-select-style', plugins_url('assets/css/fontselect.css', __FILE__));
     $templateId = substr($template_name, -2);
     wp_enqueue_script('anc-6310-common-helper', plugins_url('settings/helper/_common-helper.js', __FILE__), array('jquery'));
-    include $template_path;
+    include anc_6310_plugin_url . 'settings/counters/' . $template_name . '.php';
   }
 }
 
