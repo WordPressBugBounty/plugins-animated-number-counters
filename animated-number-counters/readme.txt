@@ -2,8 +2,8 @@
 Contributors: WpMart
 Tags: number counter, animated numbers, Animated Number Counters, animated numbers counter, animated counter
 Requires at least: 6.0
-Tested up to: 6.8
-Stable tag: 2.3
+Tested up to: 6.9
+Stable tag: 2.6
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -174,6 +174,15 @@ Tags: number counter, animated numbers, Animated Number Counters, animated numbe
 
 
 == Changelog ==
+= 2.6 =
+* FEATURE – Fixed font awesome URL
+
+= 2.5 =
+* Fixed animation bug
+
+= 2.4 =
+* Fixed animation bug
+
 = 2.3 =
 * Counter load faster
 

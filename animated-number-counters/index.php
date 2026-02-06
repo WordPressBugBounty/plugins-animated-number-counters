@@ -10,14 +10,14 @@
   Domain Path: /languages
   License: GPL-2.0-or-later
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
-  Version: 2.3
+  Version: 2.6
  */
 if (!defined('ABSPATH'))
    exit;
 
 define('anc_6310_plugin_url', plugin_dir_path(__FILE__));
 define('anc_6310_plugin_dir_url', plugin_dir_url(__FILE__));
-define ('anc_6310_PLUGIN_CURRENT_VERSION', 2.3);
+define ('anc_6310_PLUGIN_CURRENT_VERSION', 2.6);
 define( 'ANC_6310_PLUGIN_LANGUAGE_PATH', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 
@@ -53,7 +53,8 @@ function anc_6310_animated_number_counter()
 function anc_6310_home()
 {
    global $wpdb;
-   wp_enqueue_style('anc-6310-font-awesome-5-0-13', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+   wp_enqueue_style('anc-6310-font-awesome-new', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+   wp_enqueue_style('anc-6310-font-awesome-old', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css');
    wp_enqueue_style('anc-6310-style', plugins_url('assets/css/style.css', __FILE__));
 
    $style_table = $wpdb->prefix . 'anc_6310_style';

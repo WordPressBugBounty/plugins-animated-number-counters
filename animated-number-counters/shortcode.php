@@ -64,7 +64,8 @@ if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path))
         $fonts .= "|" . esc_attr($cssData['button_font_family']);
     }
 
-    wp_enqueue_style('anc-6310-font-awesome-5-0-13', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+    wp_enqueue_style('anc-6310-font-awesome-new', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+    wp_enqueue_style('anc-6310-font-awesome-old', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css');
     wp_enqueue_style('anc-6310-common-output-css', plugins_url('output/css/common-output.css', __FILE__));
     wp_enqueue_style('anc-6310-font-awesome-4-07', plugins_url('assets/css/font-awesome.min.css', __FILE__));
     wp_enqueue_style("anc-6310-googlesss-font-" . esc_attr($ids), "https://fonts.googleapis.com/css?family=" . esc_attr($fonts));

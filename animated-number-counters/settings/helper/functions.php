@@ -122,7 +122,8 @@ function anc_6310_special_character_remove($data) {
 
    function anc_6310_link_css_js()
    {
-      wp_enqueue_style('anc-6310-font-awesome-5-0-13', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+      wp_enqueue_style('anc-6310-font-awesome-new', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+      wp_enqueue_style('anc-6310-font-awesome-old', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css');
 		wp_enqueue_style('anc-6310-codemirror-style', anc_6310_plugin_dir_url . 'assets/css/codemirror.min.css');
 		wp_enqueue_style('anc-6310-color-style', anc_6310_plugin_dir_url . 'assets/css/jquery.minicolors.min.css');
 		wp_enqueue_script('anc-6310-color-js', anc_6310_plugin_dir_url . 'assets/js/jquery.minicolors.min.js', array('jquery'));
