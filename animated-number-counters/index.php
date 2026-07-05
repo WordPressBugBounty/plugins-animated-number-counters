@@ -10,15 +10,15 @@
   Domain Path: /languages
   License: GPL-2.0-or-later
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
-  Version: 2.6
+  Version: 2.7
  */
 if (!defined('ABSPATH'))
    exit;
 
 define('anc_6310_plugin_url', plugin_dir_path(__FILE__));
 define('anc_6310_plugin_dir_url', plugin_dir_url(__FILE__));
-define ('anc_6310_PLUGIN_CURRENT_VERSION', 2.6);
-define( 'ANC_6310_PLUGIN_LANGUAGE_PATH', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+define('anc_6310_PLUGIN_CURRENT_VERSION', 2.7);
+define('ANC_6310_PLUGIN_LANGUAGE_PATH', dirname(plugin_basename(__FILE__)) . '/languages');
 
 
 add_shortcode('anc_6310_number_counter', 'anc_6310_number_counter_shortcode');
@@ -85,36 +85,38 @@ function anc_6310_ajax_enqueue()
 
 add_action('wp_enqueue_scripts', 'anc_6310_ajax_enqueue');
 
-function anc_6310_activation_redirect( $plugin ) {
-   if( $plugin == plugin_basename( __FILE__ ) ) {
-       exit( wp_redirect( admin_url( 'admin.php?page=anc-6310-counter-use' ) ) );
+function anc_6310_activation_redirect($plugin)
+{
+   if ($plugin == plugin_basename(__FILE__)) {
+      exit(wp_redirect(admin_url('admin.php?page=anc-6310-counter-use')));
    }
 }
-add_action( 'activated_plugin', 'anc_6310_activation_redirect' );
+add_action('activated_plugin', 'anc_6310_activation_redirect');
 
-function anc_6310_enqueue_with_footer() {
+function anc_6310_enqueue_with_footer()
+{
    wp_enqueue_script('anc-6310-counterup', plugins_url('assets/js/jquery.counterup.js', __FILE__), array('jquery'), '1.1.0', true);
    wp_enqueue_script('anc-6310-output', plugins_url('assets/js/anc-6310-output.js', __FILE__), array('jquery'), '1.1.0', true);
 }
 
-function anc_6310_enqueue_without_footer() {
+function anc_6310_enqueue_without_footer()
+{
    wp_enqueue_script('anc-6310-counterup', plugins_url('assets/js/jquery.counterup.js', __FILE__), array('jquery'));
    wp_enqueue_script('anc-6310-output', plugins_url('assets/js/anc-6310-output.js', __FILE__), array('jquery'));
 }
 
-function anc_6310_did_footer(){
-   if(did_action( 'wp_footer' )) {
-      update_option( 'anc_6310_wp_footer_exist', 'anc' );
-   } else{
-      delete_option( 'anc_6310_wp_footer_exist' );
-
+function anc_6310_did_footer()
+{
+   if (did_action('wp_footer')) {
+      update_option('anc_6310_wp_footer_exist', 'anc');
+   } else {
+      delete_option('anc_6310_wp_footer_exist');
    }
 }
-add_action( 'shutdown',  'anc_6310_did_footer'  );
+add_action('shutdown',  'anc_6310_did_footer');
 
-if( 'anc' == get_option( 'anc_6310_wp_footer_exist' ) ){
+if ('anc' == get_option('anc_6310_wp_footer_exist')) {
    add_action('wp_enqueue_scripts', 'anc_6310_enqueue_with_footer');
-}   
-else{
+} else {
    add_action('wp_enqueue_scripts', 'anc_6310_enqueue_without_footer');
 }

@@ -1,7 +1,7 @@
 <?php
 if (!defined('ABSPATH'))
   exit;
-  
+
 if (!empty($_POST['submit']) && $_POST['submit'] == 'Save' && $_POST['style'] != '') {
   $nonce = $_REQUEST['_wpnonce'];
   if (!wp_verify_nonce($nonce, 'anc-6310-nonce-field')) {
@@ -20,33 +20,33 @@ if (!empty($_POST['submit']) && $_POST['submit'] == 'Save' && $_POST['style'] !=
     } else if ($_POST['style'] == 'counter-32') {
       $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_line_height,icon_color,icon_hover_color,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,counter_description,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!19||##||3||##||500||##||rgba(0, 0, 0, 0.5)||##||rgba(0, 0, 0, 0.5)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-32-background.jpg||##||22||##||22||##||rgb(214, 214, 214)||##||rgb(214, 214, 214)||##||100||##||uppercase||##||center||##||Amaranth||##||0||##||0||##||10||##||15||##||20||##||20||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||10||##||10||##||6||##||10||##||1||##||15||##||20||##||rgb(214, 214, 214)||##||rgb(214, 214, 214)||##||400||##||capitalize||##||center||##||Allerta||##||0||##||0||##||10||##||5||##||30||##||30||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||Amaranth||##||0||##||0||##||0||##||10||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-13') {
-      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_circle_size,icon_circle_border_width,icon_color,icon_hover_color,icon_left_circle_color,icon_left_circle_hover_color,icon_right_circle_color,icon_right_circle_hover_color,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!6||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-13-background.jpg||##||20||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||uppercase||##||center||##||PT+Sans||##||0||##||0||##||45||##||0||##||40||##||130||##||10||##||rgba(255, 255, 255, 1)||##||rgba(53, 53, 53, 1)||##||rgba(255, 255, 255, 1)||##||rgba(53, 53, 53, 1)||##||rgba(53, 53, 53, 1)||##||rgba(255, 255, 255, 1)||##||42||##||0||##||15||##||15||##||rgb(82, 76, 76)||##||rgb(82, 76, 76)||##||400||##||capitalize||##||center||##||Amaranth||##||0||##||0||##||15||##||20||##||45||##||45||##||rgb(53, 53, 53)||##||rgb(53, 53, 53)||##||400||##||center||##||Amaranth||##||0||##||0||##||35||##||15||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
+      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_circle_size,icon_circle_border_width,icon_color,icon_hover_color,icon_left_circle_color,icon_left_circle_hover_color,icon_right_circle_color,icon_right_circle_hover_color,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!6||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://i.postimg.cc/G3k7sr72/counter-13-background.jpg||##||20||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||uppercase||##||center||##||PT+Sans||##||0||##||0||##||45||##||0||##||40||##||130||##||10||##||rgba(255, 255, 255, 1)||##||rgba(53, 53, 53, 1)||##||rgba(255, 255, 255, 1)||##||rgba(53, 53, 53, 1)||##||rgba(53, 53, 53, 1)||##||rgba(255, 255, 255, 1)||##||42||##||0||##||15||##||15||##||rgb(82, 76, 76)||##||rgb(82, 76, 76)||##||400||##||capitalize||##||center||##||Amaranth||##||0||##||0||##||15||##||20||##||45||##||45||##||rgb(53, 53, 53)||##||rgb(53, 53, 53)||##||400||##||center||##||Amaranth||##||0||##||0||##||35||##||15||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-14') {
-      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_margin_top,icon_margin_bottom,counter_description,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,underline_background_color,underline_background_hover_color,underline_height,underline_margin_top,underline_radius,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!21||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(36, 72, 125, 0.5)||##||rgba(36, 72, 125, 0.5)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-14-background.jpg||##||18||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||45||##||10||##||60||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||20||##||10||##||1||##||16||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||20||##||15||##||30||##||30||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||800||##||Vollkorn||##||0||##||0||##||14||##||10||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||3||##||55||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||15||##||10||##||||##||Save";
+      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_margin_top,icon_margin_bottom,counter_description,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,underline_background_color,underline_background_hover_color,underline_height,underline_margin_top,underline_radius,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!21||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(36, 72, 125, 0.5)||##||rgba(36, 72, 125, 0.5)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://i.postimg.cc/Qxmf0mZ4/counter-14-background.jpg||##||18||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||45||##||10||##||60||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||20||##||10||##||1||##||16||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||20||##||15||##||30||##||30||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||800||##||Vollkorn||##||0||##||0||##||14||##||10||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||3||##||55||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||15||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-15') {
       $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,full_background_color,full_background_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_circle_color,icon_circle_hover_color,icon_circle_size,icon_circle_border_width,icon_margin_top,icon_margin_bottom,counter_description,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!22||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(250, 156, 40, 1)||##||rgba(250, 156, 40, 1)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||18||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||uppercase||##||center||##||Vollkorn||##||0||##||0||##||20||##||10||##||65||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||125||##||2||##||10||##||10||##||1||##||16||##||22||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||20||##||20||##||30||##||35||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||800||##||center||##||Vollkorn||##||0||##||0||##||20||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||10||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-16') {
-      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!12||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0.05)||##||2||##||2||##||rgba(204, 204, 204, 1)||##||rgba(204, 204, 204, 1)||##||rgba(0, 0, 0, 0.5)||##||rgba(0, 0, 0, 0.5)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-16-background.jpg||##||20||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||uppercase||##||center||##||Vollkorn||##||0||##||0||##||20||##||10||##||25||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||center||##||0||##||10||##||10||##||5||##||15||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Arimo||##||0||##||0||##||20||##||0||##||30||##||27||##||rgb(57, 177, 238)||##||rgb(57, 177, 238)||##||600||##||Vollkorn||##||0||##||0||##||10||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
+      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!12||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0.05)||##||2||##||2||##||rgba(204, 204, 204, 1)||##||rgba(204, 204, 204, 1)||##||rgba(0, 0, 0, 0.5)||##||rgba(0, 0, 0, 0.5)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://i.postimg.cc/nLJMr4C4/counter-16-background.jpg||##||20||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||uppercase||##||center||##||Vollkorn||##||0||##||0||##||20||##||10||##||25||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||center||##||0||##||10||##||10||##||5||##||15||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Arimo||##||0||##||0||##||20||##||0||##||30||##||27||##||rgb(57, 177, 238)||##||rgb(57, 177, 238)||##||600||##||Vollkorn||##||0||##||0||##||10||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-17') {
       $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!24||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(0, 0, 0, 0.5)||##||rgba(0, 0, 0, 0.5)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://www.wpmart.org/wp-content/uploads/2020/12/counter-17-background.jpg||##||23||##||30||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||0||##||20||##||50||##||rgba(222, 193, 27, 1)||##||rgba(222, 193, 27, 1)||##||center||##||0||##||15||##||18||##||0||##||15||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Amaranth||##||0||##||0||##||20||##||10||##||40||##||40||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||||##||0||##||0||##||25||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||25||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-18') {
       $css = "id,item_per_row,animation_duration,box_background_color_1,box_background_hover_color_1,box_background_color_2,box_background_hover_color_2,box_background_color_3,box_background_hover_color_3,box_background_color_4,box_background_hover_color_4,box_background_color_5,box_background_hover_color_5,box_background_color_6,box_background_hover_color_6,box_radius,box_border_width,box_border_color,box_border_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!25||##||3||##||500||##||rgba(221, 51, 51, 1)||##||rgba(221, 51, 51, 1)||##||rgba(129, 215, 66, 1)||##||rgba(129, 215, 66, 1)||##||rgba(163, 50, 157, 1)||##||rgba(163, 50, 157, 1)||##||rgba(30, 115, 190, 1)||##||rgba(30, 115, 190, 1)||##||rgba(8, 192, 209, 1)||##||rgba(8, 192, 209, 1)||##||rgba(178, 191, 31, 1)||##||rgba(172, 184, 40, 1)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||18||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||uppercase||##||center||##||Vollkorn||##||0||##||0||##||20||##||0||##||50||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||center||##||0||##||10||##||0||##||0||##||15||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Amaranth||##||8||##||8||##||10||##||20||##||35||##||35||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||800||##||||##||0||##||0||##||10||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-19') {
-      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!26||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-19-background.jpg||##||22||##||24||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||600||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||20||##||0||##||60||##||rgba(0, 0, 0, 1)||##||rgba(0, 0, 0, 1)||##||center||##||0||##||0||##||20||##||0||##||15||##||15||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||400||##||capitalize||##||center||##||Amaranth||##||0||##||0||##||10||##||15||##||35||##||35||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||100||##||center||##||Vollkorn||##||10||##||0||##||20||##||0||##||20||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||2||##||0||##||0||##||20||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||15||##||10||##||||##||Save";
+      $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_background_image,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!26||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||https://i.postimg.cc/qv0zMctV/counter-19-background.jpg||##||22||##||24||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||600||##||capitalize||##||center||##||Vollkorn||##||0||##||0||##||20||##||0||##||60||##||rgba(0, 0, 0, 1)||##||rgba(0, 0, 0, 1)||##||center||##||0||##||0||##||20||##||0||##||15||##||15||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||400||##||capitalize||##||center||##||Amaranth||##||0||##||0||##||10||##||15||##||35||##||35||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||100||##||center||##||Vollkorn||##||10||##||0||##||20||##||0||##||20||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||2||##||0||##||0||##||20||##||rgb(0, 0, 0)||##||rgb(0, 0, 0)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||15||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-31') {
       $css = "id,item_per_row,animation_duration,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,full_background_color,full_background_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_border_right_color,icon_border_right_hover_color,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!27||##||3||##||500||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||rgba(222, 102, 102, 1)||##||rgba(222, 102, 102, 1)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||17||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||uppercase||##||left||##||Vollkorn||##||0||##||0||##||15||##||0||##||40||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||0||##||15||##||20||##||0||##||15||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Amaranth||##||0||##||0||##||20||##||20||##||36||##||36||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||left||##||Vollkorn||##||0||##||0||##||5||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
     }
 
     $data = $wpdb->get_results('SELECT * FROM ' . $counter_table . ' ORDER BY id DESC', ARRAY_A);
-    if($data){
+    if ($data) {
       foreach ($data as $value) {
-        if($counterids != ''){
+        if ($counterids != '') {
           $counterids .= ",";
         }
         $counterids .= $value['id'];
       }
     }
-    
+
 
     $wpdb->query($wpdb->prepare("INSERT INTO {$style_table} (name, style_name, css, counterids) VALUES ( %s, %s, %s, %s)", array($name, $style_name, $css, $counterids)));
     $redirect_id = $wpdb->insert_id;
@@ -78,7 +78,7 @@ $icons = array(
   <!-- ******************************************
       counter-31 start
     ****************************************** -->
-    <div class="anc-6310-row anc-6310-6310_number-counterstyle-boxed">
+  <div class="anc-6310-row anc-6310-6310_number-counterstyle-boxed">
     <div class="anc-6310-padding-15">
       <div class="anc-6310-counter-31-paralax">
         <div class="anc-6310-counter-31-row">
@@ -87,52 +87,52 @@ $icons = array(
               <div class="anc-6310-counter-31-icon"><i class="fas fa-biking"></i></div>
               <div class="anc-6310-counter-31-inner-wrap">
                 <div class="anc-6310-counter-31-number anc-6310-animated-counter-31">
-                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number" 
-                        id="anc-6310-31-1"
-                        data-anc-6310-start="0" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number"
+                    id="anc-6310-31-1"
+                    data-anc-6310-start="0"
+                    data-anc-6310-end="1200"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-31-title">LINE OF CODES</div>
               </div>
             </div>
-          </div>   
+          </div>
           <div class="anc-6310-col-3">
             <div class="anc-6310-counter-31">
               <div class="anc-6310-counter-31-icon"><i class="fas fa-allergies"></i></div>
               <div class="anc-6310-counter-31-inner-wrap">
                 <div class="anc-6310-counter-31-number anc-6310-animated-counter-31">
-                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number" 
-                        id="anc-6310-31-2"
-                        data-anc-6310-start="0" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number"
+                    id="anc-6310-31-2"
+                    data-anc-6310-start="0"
+                    data-anc-6310-end="1200"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-31-title">LINE OF CODES</div>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="anc-6310-col-3">
             <div class="anc-6310-counter-31">
               <div class="anc-6310-counter-31-icon"><i class="fa fa-code"></i></div>
               <div class="anc-6310-counter-31-inner-wrap">
                 <div class="anc-6310-counter-31-number anc-6310-animated-counter-31">
-                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number" 
-                        id="anc-6310-31-3"
-                        data-anc-6310-start="0" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number"
+                    id="anc-6310-31-3"
+                    data-anc-6310-start="0"
+                    data-anc-6310-end="1200"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-31-title">Lorem ipsum, or lipsum as it is sometimes known</div>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -156,76 +156,76 @@ $icons = array(
             <div class="anc-6310-col-4">
               <div class="anc-6310-counter-32">
                 <div class="anc-6310-counter-32-icon-wrapper">
-                <div class="anc-6310-counter-32-icon">
-                <i class="fas fa-allergies"></i>
-                </div>
+                  <div class="anc-6310-counter-32-icon">
+                    <i class="fas fa-allergies"></i>
+                  </div>
                 </div>
                 <div class="anc-6310-counter-32-number anc-6310-animated-counter-32">
-                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number" 
-                      id="anc-6310-32-1"
-                      data-anc-6310-start="1000" 
-                      data-anc-6310-end="100" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number"
+                    id="anc-6310-32-1"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="100"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
-                  </div>
+                </div>
                 <div class="anc-6310-counter-32-title">Team Workers</div>
               </div>
             </div>
             <div class="anc-6310-col-4">
               <div class="anc-6310-counter-32">
                 <div class="anc-6310-counter-32-icon-wrapper">
-                <div class="anc-6310-counter-32-icon">
-                <i class="fab fa-angellist"></i>
-                </div>
+                  <div class="anc-6310-counter-32-icon">
+                    <i class="fab fa-angellist"></i>
+                  </div>
                 </div>
                 <div class="anc-6310-counter-32-number anc-6310-animated-counter-32">
-                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number" 
-                      id="anc-6310-32-2"
-                      data-anc-6310-start="1000" 
-                      data-anc-6310-end="100" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number"
+                    id="anc-6310-32-2"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="100"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
-                  </div>
+                </div>
                 <div class="anc-6310-counter-32-title">Team Workers</div>
               </div>
             </div>
             <div class="anc-6310-col-4">
               <div class="anc-6310-counter-32">
                 <div class="anc-6310-counter-32-icon-wrapper">
-                <div class="anc-6310-counter-32-icon">
-                <i class="fas fa-award"></i>
-                </div>
+                  <div class="anc-6310-counter-32-icon">
+                    <i class="fas fa-award"></i>
+                  </div>
                 </div>
                 <div class="anc-6310-counter-32-number anc-6310-animated-counter-32">
-                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number" 
-                      id="anc-6310-32-3"
-                      data-anc-6310-start="1000" 
-                      data-anc-6310-end="100" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number"
+                    id="anc-6310-32-3"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="100"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
-                  </div>
+                </div>
                 <div class="anc-6310-counter-32-title">Team Workers</div>
               </div>
             </div>
             <div class="anc-6310-col-4">
               <div class="anc-6310-counter-32">
                 <div class="anc-6310-counter-32-icon-wrapper">
-                <div class="anc-6310-counter-32-icon">
-                  <i class="fa fa-bullhorn"></i>
-                </div>
+                  <div class="anc-6310-counter-32-icon">
+                    <i class="fa fa-bullhorn"></i>
+                  </div>
                 </div>
                 <div class="anc-6310-counter-32-number anc-6310-animated-counter-32">
-                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number" 
-                      id="anc-6310-32-4"
-                      data-anc-6310-start="1000" 
-                      data-anc-6310-end="100" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-32-count-number anc-6310-animated-counter-32 anc-6310-counter-number"
+                    id="anc-6310-32-4"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="100"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
-                  </div>
+                </div>
                 <div class="anc-6310-counter-32-title">Lorem ipsum, or lipsum as it is sometimes known</div>
               </div>
             </div>
@@ -259,12 +259,12 @@ $icons = array(
                 </div>
                 <div class="anc-6310-counter-13-title">Team Workers</div>
                 <div class="anc-6310-counter-13-number anc-6310-animated-counter-13">
-                  <div class="anc-6310-counter-13-count-number anc-6310-animated-counter-13 anc-6310-counter-number" 
-                      id="anc-6310-13-1"
-                      data-anc-6310-start="1000" 
-                      data-anc-6310-end="800" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-13-count-number anc-6310-animated-counter-13 anc-6310-counter-number"
+                    id="anc-6310-13-1"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="800"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
                 </div>
               </div>
@@ -278,12 +278,12 @@ $icons = array(
                 </div>
                 <div class="anc-6310-counter-13-title">Happy Clients</div>
                 <div class="anc-6310-counter-13-number anc-6310-animated-counter-13">
-                  <div class="anc-6310-counter-13-count-number anc-6310-animated-counter-13 anc-6310-counter-number" 
-                      id="anc-6310-13-2"
-                      data-anc-6310-start="1000" 
-                      data-anc-6310-end="100" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-13-count-number anc-6310-animated-counter-13 anc-6310-counter-number"
+                    id="anc-6310-13-2"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="100"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
                 </div>
               </div>
@@ -297,12 +297,12 @@ $icons = array(
                 </div>
                 <div class="anc-6310-counter-13-title">Design Awards</div>
                 <div class="anc-6310-counter-13-number anc-6310-animated-counter-13">
-                  <div class="anc-6310-counter-13-count-number anc-6310-animated-counter-13 anc-6310-counter-number" 
-                        id="anc-6310-13-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="89.88" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-13-count-number anc-6310-animated-counter-13 anc-6310-counter-number"
+                    id="anc-6310-13-3"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="89.88"
+                    data-anc-6310-decimal="2"
+                    data-anc-6310-duration="2">
                   </div>
                 </div>
               </div>
@@ -332,12 +332,12 @@ $icons = array(
               <div class="anc-6310-counter-14">
                 <div class="anc-6310-counter-14-icon"><i class="fa fa-laptop"></i></div>
                 <div class="anc-6310-counter-14-count-content">
-                  <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number" 
-                        id="anc-6310-14-1"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="100" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number"
+                    id="anc-6310-14-1"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="100"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
                 </div>
                 <div class="anc-6310-counter-14-title">Projects Completed</div>
@@ -348,12 +348,12 @@ $icons = array(
               <div class="anc-6310-counter-14">
                 <div class="anc-6310-counter-14-icon"><i class="far fa-smile"></i></div>
                 <div class="anc-6310-counter-14-count-content">
-                  <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number" 
-                        id="anc-6310-14-2"
-                        data-anc-6310-start="100" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number"
+                    id="anc-6310-14-2"
+                    data-anc-6310-start="100"
+                    data-anc-6310-end="1200"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
                   </div>
                 </div>
                 <div class="anc-6310-counter-14-title">Happy Clients</div>
@@ -364,12 +364,12 @@ $icons = array(
               <div class="anc-6310-counter-14">
                 <div class="anc-6310-counter-14-icon"><i class="far fa-gem"></i></div>
                 <div class="anc-6310-counter-14-count-content">
-                <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number" 
-                        id="anc-6310-14-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="89.88" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number"
+                    id="anc-6310-14-3"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="89.88"
+                    data-anc-6310-decimal="2"
+                    data-anc-6310-duration="2">
                   </div>
                 </div>
                 <div class="anc-6310-counter-14-title">Design Awards</div>
@@ -380,12 +380,12 @@ $icons = array(
               <div class="anc-6310-counter-14">
                 <div class="anc-6310-counter-14-icon"><i class="fa fa-coffee"></i></div>
                 <div class="anc-6310-counter-14-count-content">
-                <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number" 
-                        id="anc-6310-14-4"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="9.98" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
+                  <div class="anc-6310-counter-14-count-number anc-6310-animated-counter-14 anc-6310-counter-number"
+                    id="anc-6310-14-4"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="9.98"
+                    data-anc-6310-decimal="2"
+                    data-anc-6310-duration="2">
                   </div>
                 </div>
                 <div class="anc-6310-counter-14-title">Cups Of Coffee</div>
@@ -417,13 +417,13 @@ $icons = array(
               <div class="anc-6310-counter-15-icon"><i class="fab fa-codepen"></i></div>
               <div class="anc-6310-counter-15-title">Projects Completed</div>
               <div class="anc-6310-counter-15-number anc-6310-animated-counter-15">
-                  <div class="anc-6310-counter-15-count-number anc-6310-animated-counter-15 anc-6310-counter-number" 
-                        id="anc-6310-15-1"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="100" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                  </div>
+                <div class="anc-6310-counter-15-count-number anc-6310-animated-counter-15 anc-6310-counter-number"
+                  id="anc-6310-15-1"
+                  data-anc-6310-start="1000"
+                  data-anc-6310-end="100"
+                  data-anc-6310-decimal="0"
+                  data-anc-6310-duration="2">
+                </div>
               </div>
               <div class="anc-6310-counter-15-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
             </div>
@@ -433,13 +433,13 @@ $icons = array(
               <div class="anc-6310-counter-15-icon"><i class="fab fa-angellist"></i></div>
               <div class="anc-6310-counter-15-title">Happy Clients</div>
               <div class="anc-6310-counter-15-number anc-6310-animated-counter-15">
-                <div class="anc-6310-counter-15-count-number anc-6310-animated-counter-15 anc-6310-counter-number" 
-                        id="anc-6310-15-2"
-                        data-anc-6310-start="100" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                  </div>
+                <div class="anc-6310-counter-15-count-number anc-6310-animated-counter-15 anc-6310-counter-number"
+                  id="anc-6310-15-2"
+                  data-anc-6310-start="100"
+                  data-anc-6310-end="1200"
+                  data-anc-6310-decimal="0"
+                  data-anc-6310-duration="2">
+                </div>
               </div>
               <div class="anc-6310-counter-15-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
             </div>
@@ -449,13 +449,13 @@ $icons = array(
               <div class="anc-6310-counter-15-icon"><i class="fa fa-fire"></i></div>
               <div class="anc-6310-counter-15-title">Design Awards</div>
               <div class="anc-6310-counter-15-number anc-6310-animated-counter-15">
-                 <div class="anc-6310-counter-15-count-number anc-6310-animated-counter-15 anc-6310-counter-number" 
-                        id="anc-6310-15-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="99.98" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
-                  </div>
+                <div class="anc-6310-counter-15-count-number anc-6310-animated-counter-15 anc-6310-counter-number"
+                  id="anc-6310-15-3"
+                  data-anc-6310-start="1000"
+                  data-anc-6310-end="99.98"
+                  data-anc-6310-decimal="2"
+                  data-anc-6310-duration="2">
+                </div>
               </div>
               <div class="anc-6310-counter-15-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
             </div>
@@ -485,13 +485,13 @@ $icons = array(
                 <div class="anc-6310-counter-16-icon">
                   <i class="far fa-smile"></i>
                   <div class="anc-6310-counter-16-number anc-6310-animated-counter-16">
-                     <div class="anc-6310-counter-16-count-number anc-6310-animated-counter-16 anc-6310-counter-number" 
-                        id="anc-6310-16-1"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="500" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                      </div>
+                    <div class="anc-6310-counter-16-count-number anc-6310-animated-counter-16 anc-6310-counter-number"
+                      id="anc-6310-16-1"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="500"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                 </div>
                 <div class="anc-6310-counter-16-title">Happy Clients</div>
@@ -502,13 +502,13 @@ $icons = array(
                 <div class="anc-6310-counter-16-icon">
                   <i class="fa fa-trophy"></i>
                   <div class="anc-6310-counter-16-number anc-6310-animated-counter-16">
-                    <div class="anc-6310-counter-16-count-number anc-6310-animated-counter-16 anc-6310-counter-number" 
-                        id="anc-6310-16-2"
-                        data-anc-6310-start="100" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                      </div>
+                    <div class="anc-6310-counter-16-count-number anc-6310-animated-counter-16 anc-6310-counter-number"
+                      id="anc-6310-16-2"
+                      data-anc-6310-start="100"
+                      data-anc-6310-end="1200"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                 </div>
                 <div class="anc-6310-counter-16-title">Design Awards</div>
@@ -519,13 +519,13 @@ $icons = array(
                 <div class="anc-6310-counter-16-icon">
                   <i class="fa fa-users"></i>
                   <div class="anc-6310-counter-16-number anc-6310-animated-counter-16">
-                    <div class="anc-6310-counter-16-count-number anc-6310-animated-counter-16 anc-6310-counter-number" 
-                        id="anc-6310-16-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="99.98" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
-                      </div>
+                    <div class="anc-6310-counter-16-count-number anc-6310-animated-counter-16 anc-6310-counter-number"
+                      id="anc-6310-16-3"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="99.98"
+                      data-anc-6310-decimal="2"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                 </div>
                 <div class="anc-6310-counter-16-title">Team Workers</div>
@@ -558,13 +558,13 @@ $icons = array(
                 <div class="anc-6310-counter-17-icon">
                   <i class="far fa-smile"></i>
                   <div class="anc-6310-counter-17-number anc-6310-animated-counter-17">
-                      <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number" 
-                        id="anc-6310-17-1"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="550" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                      </div>
+                    <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number"
+                      id="anc-6310-17-1"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="550"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -575,13 +575,13 @@ $icons = array(
                 <div class="anc-6310-counter-17-icon">
                   <i class="fa fa-trophy"></i>
                   <div class="anc-6310-counter-17-number anc-6310-animated-counter-17">
-                      <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number" 
-                        id="anc-6310-17-2"
-                        data-anc-6310-start="100" 
-                        data-anc-6310-end="1110" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                      </div>
+                    <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number"
+                      id="anc-6310-17-2"
+                      data-anc-6310-start="100"
+                      data-anc-6310-end="1110"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -592,13 +592,13 @@ $icons = array(
                 <div class="anc-6310-counter-17-icon">
                   <i class="far fa-gem"></i>
                   <div class="anc-6310-counter-17-number anc-6310-animated-counter-17">
-                      <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number" 
-                        id="anc-6310-17-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="99.98" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
-                      </div>
+                    <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number"
+                      id="anc-6310-17-3"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="99.98"
+                      data-anc-6310-decimal="2"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -609,13 +609,13 @@ $icons = array(
                 <div class="anc-6310-counter-17-icon">
                   <i class="fa fa-users"></i>
                   <div class="anc-6310-counter-17-number anc-6310-animated-counter-17">
-                      <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number" 
-                        id="anc-6310-17-4"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="100" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                      </div>
+                    <div class="anc-6310-counter-17-count-number anc-6310-animated-counter-17 anc-6310-counter-number"
+                      id="anc-6310-17-4"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="100"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -644,13 +644,13 @@ $icons = array(
             <div class="anc-6310-counter-18-icon">
               <i class="fa fa-laptop"></i>
               <div class="anc-6310-counter-18-number anc-6310-animated-counter-18">
-                  <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number" 
-                        id="anc-6310-18-1"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="100" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number"
+                  id="anc-6310-18-1"
+                  data-anc-6310-start="1000"
+                  data-anc-6310-end="100"
+                  data-anc-6310-decimal="0"
+                  data-anc-6310-duration="2">
+                </div>
               </div>
             </div>
             <div class="anc-6310-counter-18-title">Team Workers</div>
@@ -661,13 +661,13 @@ $icons = array(
             <div class="anc-6310-counter-18-icon">
               <i class="far fa-gem"></i>
               <div class="anc-6310-counter-18-number anc-6310-animated-counter-18">
-                  <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number" 
-                        id="anc-6310-18-2"
-                        data-anc-6310-start="100" 
-                        data-anc-6310-end="1100" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number"
+                  id="anc-6310-18-2"
+                  data-anc-6310-start="100"
+                  data-anc-6310-end="1100"
+                  data-anc-6310-decimal="0"
+                  data-anc-6310-duration="2">
+                </div>
               </div>
             </div>
             <div class="anc-6310-counter-18-title">Design Awards</div>
@@ -678,13 +678,13 @@ $icons = array(
             <div class="anc-6310-counter-18-icon">
               <i class="far fa-smile"></i>
               <div class="anc-6310-counter-18-number anc-6310-animated-counter-18">
-                  <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number" 
-                        id="anc-6310-18-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="89.98" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
-                   </div>
+                <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number"
+                  id="anc-6310-18-3"
+                  data-anc-6310-start="1000"
+                  data-anc-6310-end="89.98"
+                  data-anc-6310-decimal="2"
+                  data-anc-6310-duration="2">
+                </div>
               </div>
             </div>
             <div class="anc-6310-counter-18-title">Happy Clients</div>
@@ -695,13 +695,13 @@ $icons = array(
             <div class="anc-6310-counter-18-icon">
               <i class="fa fa-camera-retro"></i>
               <div class="anc-6310-counter-18-number anc-6310-animated-counter-18">
-                  <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number" 
-                        id="anc-6310-18-4"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="10" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                <div class="anc-6310-counter-18-count-number anc-6310-animated-counter-18 anc-6310-counter-number"
+                  id="anc-6310-18-4"
+                  data-anc-6310-start="1000"
+                  data-anc-6310-end="10"
+                  data-anc-6310-decimal="0"
+                  data-anc-6310-duration="2">
+                </div>
               </div>
             </div>
             <div class="anc-6310-counter-18-title">Project Ideas</div>
@@ -731,13 +731,13 @@ $icons = array(
                 <div class="anc-6310-counter-19">
                   <div class="anc-6310-counter-19-icon"><i class="fa fa-child"></i></div>
                   <div class="anc-6310-counter-19-number anc-6310-animated-counter-19">
-                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number" 
-                        id="anc-6310-19-1"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="100" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number"
+                      id="anc-6310-19-1"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="100"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                   <div class="anc-6310-counter-19-title">Projects Completed</div>
                 </div>
@@ -746,13 +746,13 @@ $icons = array(
                 <div class="anc-6310-counter-19">
                   <div class="anc-6310-counter-19-icon"><i class="fa fa-camera-retro"></i></div>
                   <div class="anc-6310-counter-19-number anc-6310-animated-counter-19">
-                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number" 
-                        id="anc-6310-19-2"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="3200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number"
+                      id="anc-6310-19-2"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="3200"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                   <div class="anc-6310-counter-19-title">Happy Clients</div>
                 </div>
@@ -761,13 +761,13 @@ $icons = array(
                 <div class="anc-6310-counter-19">
                   <div class="anc-6310-counter-19-icon"><i class="fab fa-apple"></i></div>
                   <div class="anc-6310-counter-19-number anc-6310-animated-counter-19">
-                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number" 
-                        id="anc-6310-19-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="10.98" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
-                   </div>
+                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number"
+                      id="anc-6310-19-3"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="10.98"
+                      data-anc-6310-decimal="2"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                   <div class="anc-6310-counter-19-title">Design Awards</div>
                 </div>
@@ -778,13 +778,13 @@ $icons = array(
                 <div class="anc-6310-counter-19">
                   <div class="anc-6310-counter-19-icon"><i class="fa fa-coffee"></i></div>
                   <div class="anc-6310-counter-19-number anc-6310-animated-counter-19">
-                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number" 
-                        id="anc-6310-19-4"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="500" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number"
+                      id="anc-6310-19-4"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="500"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                   <div class="anc-6310-counter-19-title">Cups Of Coffee</div>
                 </div>
@@ -793,12 +793,12 @@ $icons = array(
                 <div class="anc-6310-counter-19">
                   <div class="anc-6310-counter-19-icon"><i class="fa fa-laptop"></i></div>
                   <div class="anc-6310-counter-19-number anc-6310-animated-counter-19">
-                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number" 
-                        id="anc-6310-19-5"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
+                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number"
+                      id="anc-6310-19-5"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="1200"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
                     </div>
                   </div>
                   <div class="anc-6310-counter-19-title">Lines Of Code</div>
@@ -808,13 +808,13 @@ $icons = array(
                 <div class="anc-6310-counter-19">
                   <div class="anc-6310-counter-19-icon"><i class="fa fa-users"></i></div>
                   <div class="anc-6310-counter-19-number anc-6310-animated-counter-19">
-                  <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number" 
-                        id="anc-6310-19-6"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="89.98" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                    <div class="anc-6310-counter-19-count-number anc-6310-animated-counter-19 anc-6310-counter-number"
+                      id="anc-6310-19-6"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="89.98"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
                   </div>
                   <div class="anc-6310-counter-19-title">Team Workers</div>
                 </div>
@@ -845,13 +845,13 @@ $icons = array(
               <div class="anc-6310-counter-31-icon"><i class="fa fa-code"></i></div>
               <div class="anc-6310-counter-31-inner-wrap">
                 <div class="anc-6310-counter-31-number anc-6310-animated-counter-31">
-                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number" 
-                        id="anc-6310-31-1"
-                        data-anc-6310-start="0" 
-                        data-anc-6310-end="1200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number"
+                    id="anc-6310-31-1"
+                    data-anc-6310-start="0"
+                    data-anc-6310-end="1200"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-31-title">LINE OF CODES</div>
               </div>
@@ -862,13 +862,13 @@ $icons = array(
               <div class="anc-6310-counter-31-icon"><i class="fa fa-user"></i></div>
               <div class="anc-6310-counter-31-inner-wrap">
                 <div class="anc-6310-counter-31-number anc-6310-animated-counter-31">
-                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number" 
-                        id="anc-6310-31-2"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="200" 
-                        data-anc-6310-decimal="0" 
-                        data-anc-6310-duration="2">
-                   </div>
+                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number"
+                    id="anc-6310-31-2"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="200"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-31-title">Happy Clients</div>
               </div>
@@ -879,13 +879,13 @@ $icons = array(
               <div class="anc-6310-counter-31-icon"><i class="far fa-paper-plane"></i></div>
               <div class="anc-6310-counter-31-inner-wrap">
                 <div class="anc-6310-counter-31-number anc-6310-animated-counter-31">
-                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number" 
-                        id="anc-6310-31-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="89.98" 
-                        data-anc-6310-decimal="2" 
-                        data-anc-6310-duration="2">
-                   </div>
+                  <div class="anc-6310-counter-31-count-number anc-6310-animated-counter-31 anc-6310-counter-number"
+                    id="anc-6310-31-3"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="89.98"
+                    data-anc-6310-decimal="2"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-31-title">PROJECTS DONE</div>
               </div>
@@ -931,7 +931,6 @@ $icons = array(
   </div>
 
   <script>
-    
     jQuery(document).ready(function() {
       jQuery("body").on("click", ".anc_6310_choosen_style", function() {
         jQuery("#anc-6310-modal-add").fadeIn(500);
@@ -955,6 +954,6 @@ $icons = array(
             "overflow": "initial"
           });
         }
-      });   
+      });
     });
   </script>

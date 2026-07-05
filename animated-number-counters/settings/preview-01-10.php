@@ -15,13 +15,13 @@ if (!empty($_POST['submit']) && $_POST['submit'] == 'Save' && $_POST['style'] !=
     if ($_POST['style'] == 'counter-01') {
       $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,counter_description,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_background_color,number_background_hover_color,number_box_size,number_box_radius,number_font_size,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,counter_button,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!6||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||0||##||0||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||rgba(0, 0, 0, 0.8)||##||rgba(0, 0, 0, 0.8)||##||1||##||3||##||rgba(0, 0, 0, 0.2)||##||rgba(0, 0, 0, 0.4)||##||1||##||transparent||##||rgba(255, 255, 255, 0)||##||||##||||##||30||##||30||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||capitalize||##||center||##||Amaranth||##||0||##||0||##||80||##||17||##||1||##||12||##||15||##||rgb(82, 76, 76)||##||rgb(82, 76, 76)||##||400||##||capitalize||##||center||##||Roboto||##||0||##||0||##||10||##||20||##||rgba(0, 158, 226, 1)||##||rgba(0, 158, 226, 1)||##||120||##||60||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||Amaranth||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(219, 44, 44)||##||100||##||Amaranth||##||2||##||0||##||0||##||1||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||150||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||10||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-02') {
-      $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,underline_background_color,underline_background_hover_color,underline_height,underline_margin_top,underline_radius,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!7||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 0.35)||##||rgba(130, 128, 128, 0.5)||##||0||##||2||##||rgba(255, 255, 255, 0.55)||##||rgba(255, 255, 255, 0.55)||##||rgba(0, 0, 0, 0.75)||##||rgba(0, 0, 0, 0.75)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||3||##||transparent||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-02-background.jpeg||##||||##||18||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||capitalize||##||center||##||Roboto||##||0||##||0||##||20||##||40||##||50||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||center||##||0||##||0||##||15||##||15||##||14||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Roboto||##||2||##||2||##||15||##||20||##||rgba(159, 54, 46, 0.8)||##||rgba(159, 54, 46, 0.8)||##||3||##||40||##||0||##||35||##||35||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||center||##||Droid+Sans||##||0||##||0||##||0||##||10||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||130||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||10||##||20||##||||##||Save";
+      $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,underline_background_color,underline_background_hover_color,underline_height,underline_margin_top,underline_radius,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!7||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 0.35)||##||rgba(130, 128, 128, 0.5)||##||0||##||2||##||rgba(255, 255, 255, 0.55)||##||rgba(255, 255, 255, 0.55)||##||rgba(0, 0, 0, 0.75)||##||rgba(0, 0, 0, 0.75)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||3||##||transparent||##||rgba(255, 255, 255, 0)||##||https://i.postimg.cc/C1tgB0mv/counter-02-background.jpg||##||||##||18||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||capitalize||##||center||##||Roboto||##||0||##||0||##||20||##||40||##||50||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||center||##||0||##||0||##||15||##||15||##||14||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Roboto||##||2||##||2||##||15||##||20||##||rgba(159, 54, 46, 0.8)||##||rgba(159, 54, 46, 0.8)||##||3||##||40||##||0||##||35||##||35||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||center||##||Droid+Sans||##||0||##||0||##||0||##||10||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||130||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||10||##||20||##||||##||Save";
     } else if ($_POST['style'] == 'counter-03') {
-      $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_background_color,icon_background_hover_color,icon_background_size,icon_background_radius,icon_size,icon_line_height,icon_color,icon_hover_color,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!8||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0.3)||##||0||##||2||##||rgba(219, 219, 219, 0.55)||##||rgba(219, 219, 219, 0.55)||##||rgba(0, 0, 0, 0.7)||##||rgba(0, 0, 0, 0.7)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||3||##||transparent||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-03-background.jpg||##||||##||24||##||26||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Open+Sans||##||0||##||0||##||5||##||10||##||rgba(254, 185, 0, 1)||##||rgba(255, 87, 51, 1)||##||75||##||0||##||40||##||75||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||14||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Roboto||##||0||##||0||##||15||##||20||##||40||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||center||##||Open+Sans||##||0||##||0||##||20||##||10||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(0, 158, 226, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||25||##||0||##||||##||Save";
+      $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_background_color,icon_background_hover_color,icon_background_size,icon_background_radius,icon_size,icon_line_height,icon_color,icon_hover_color,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_text_align,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!8||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0.3)||##||0||##||2||##||rgba(219, 219, 219, 0.55)||##||rgba(219, 219, 219, 0.55)||##||rgba(0, 0, 0, 0.7)||##||rgba(0, 0, 0, 0.7)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||3||##||transparent||##||rgba(255, 255, 255, 0)||##||https://i.postimg.cc/7Lt6VpK6/counter-03-background.jpg||##||||##||24||##||26||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Open+Sans||##||0||##||0||##||5||##||10||##||rgba(254, 185, 0, 1)||##||rgba(255, 87, 51, 1)||##||75||##||0||##||40||##||75||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||14||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Roboto||##||0||##||0||##||15||##||20||##||40||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||600||##||center||##||Open+Sans||##||0||##||0||##||20||##||10||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(0, 158, 226, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||25||##||0||##||||##||Save";
     } else if ($_POST['style'] == 'counter-04') {
       $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,box_padding,box_margin_top,box_margin_bottom,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_top,title_margin_bottom,icon_background_color,icon_background_hover_color,icon_background_size,icon_background_radius,icon_padding,icon_size,icon_hover_color,icon_color,arrow_color,arrow_hover_color,counter_description,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_top,description_margin_bottom,number_font_size,number_font_color,number_font_hover_color,number_line_height,number_text_align,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!9||##||3||##||3||##||1||##||500||##||,||##||rgba(33, 42, 107, 1)||##||rgba(33, 42, 107, 1)||##||5||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||25||##||0||##||20||##||1||##||transparent||##||rgba(255, 255, 255, 0)||##||||##||||##||22||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||700||##||uppercase||##||center||##||Roboto||##||0||##||8||##||rgba(33, 42, 107, 1)||##||rgba(33, 42, 107, 1)||##||100||##||60||##||6||##||40||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||rgba(33, 42, 107, 1)||##||rgba(33, 42, 107, 1)||##||1||##||15||##||18||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Roboto||##||20||##||5||##||35||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||30||##||center||##||700||##||Roboto||##||0||##||0||##||0||##||10||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||5||##||||##||Save";
     } else if ($_POST['style'] == 'counter-05') {
-      $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_color,icon_hover_color,icon_size,icon_line_height,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,suffix_icon_show_hide,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!10||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||2||##||rgba(219, 219, 219, 1)||##||rgba(219, 219, 219, 1)||##||rgba(0, 0, 0, 0.7)||##||rgba(0, 0, 0, 0.7)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||3||##||transparent||##||rgba(255, 255, 255, 0)||##||https://wpmart.org/wp-content/uploads/anc/counter-05-background.jpg||##||||##||22||##||22||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||500||##||capitalize||##||center||##||PT+Serif||##||10||##||10||##||40||##||40||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||50||##||60||##||0||##||15||##||0||##||0||##||14||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Roboto||##||3||##||3||##||15||##||20||##||33||##||rgb(255, 122, 63)||##||rgb(255, 122, 63)||##||600||##||Roboto||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||1||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||25||##||30||##||||##||Save";
+      $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_border_width,box_border_color,box_border_hover_color,image_overlay_color,image_overlay_hover_color,box_shadow_width,box_shadow_blur,box_shadow_color,box_shadow_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_left,title_margin_right,title_margin_top,title_margin_bottom,icon_color,icon_hover_color,icon_size,icon_line_height,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_left,description_margin_right,description_margin_top,description_margin_bottom,number_font_size,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,suffix_icon_show_hide,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!10||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||2||##||rgba(219, 219, 219, 1)||##||rgba(219, 219, 219, 1)||##||rgba(0, 0, 0, 0.7)||##||rgba(0, 0, 0, 0.7)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||3||##||transparent||##||rgba(255, 255, 255, 0)||##||https://i.postimg.cc/c4RpZfyj/counter-05-background.jpg||##||||##||22||##||22||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||500||##||capitalize||##||center||##||PT+Serif||##||10||##||10||##||40||##||40||##||rgba(255, 255, 255, 1)||##||rgba(255, 255, 255, 1)||##||50||##||60||##||0||##||15||##||0||##||0||##||14||##||15||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||capitalize||##||center||##||Roboto||##||3||##||3||##||15||##||20||##||33||##||rgb(255, 122, 63)||##||rgb(255, 122, 63)||##||600||##||Roboto||##||0||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||1||##||20||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||25||##||30||##||||##||Save";
     } else if ($_POST['style'] == 'counter-06') {
       $css = "id,item_per_row,item_per_row_tablet,item_per_row_mobile,animation_duration,thousands_separator,box_background_color,box_background_hover_color,box_radius,box_border_width,box_border_color,box_border_hover_color,box_shadow_blur,box_shadow_width,box_shadow_width_hover,box_shadow_color,box_shadow_hover_color,box_padding,bottom_line_hover_color,background_type,background_transparent,template_background_color,box_background_image,youtube_video_url,title_font_size,title_line_height,title_font_color,title_font_hover_color,title_font_weight,title_text_transform,title_text_align,title_font_family,title_margin_top,title_margin_bottom,icon_size,icon_color,icon_hover_color,icon_text_align,icon_margin_left,icon_margin_right,icon_margin_top,icon_margin_bottom,counter_description,description_font_size,description_line_height,description_font_color,description_font_hover_color,description_font_weight,description_text_transform,description_text_align,description_font_family,description_margin_top,description_margin_bottom,number_font_size,number_line_height,number_font_color,number_font_hover_color,number_font_weight,number_font_family,number_margin_left,number_margin_right,number_margin_top,number_margin_bottom,prefix_icon_show_hide,number_prefix_font_size,number_prefix_font_color,number_prefix_font_hover_color,number_prefix_font_weight,number_prefix_font_family,number_prefix_position,number_prefix_margin_left,number_prefix_margin_right,suffix_icon_show_hide,number_suffix_font_size,number_suffix_font_color,number_suffix_font_hover_color,number_suffix_font_weight,number_suffix_font_family,number_suffix_position,number_suffix_margin_left,number_suffix_margin_right,button_background_color,button_background_hover_color,button_font_size,button_line_height,button_font_color,button_font_hover_color,button_font_weight,button_text_transform,button_width,button_font_family,button_align,button_text_align,button_border_width,button_border_color,button_border_hover_color,button_border_radius,button_margin_top,button_margin_bottom,custom_css,update_style_change!!##!!11||##||3||##||3||##||1||##||500||##||,||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||0||##||0||##||rgba(255, 255, 255, 0)||##||rgba(255, 255, 255, 0)||##||3||##||6||##||11||##||rgba(212, 212, 212, 1)||##||rgba(212, 212, 212, 1)||##||30||##||rgba(69, 114, 148, 0.8)||##||1||##||transparent||##||rgba(255, 255, 255, 0)||##||||##||||##||30||##||35||##||rgb(69, 114, 148)||##||rgb(69, 114, 148)||##||600||##||capitalize||##||center||##||Tinos||##||5||##||20||##||50||##||rgba(69, 114, 148, 1)||##||rgba(69, 114, 148, 1)||##||center||##||0||##||10||##||5||##||7||##||1||##||16||##||22||##||rgb(125, 125, 125)||##||rgb(125, 125, 125)||##||400||##||capitalize||##||center||##||Lato||##||25||##||15||##||40||##||40||##||rgb(69, 114, 148)||##||rgb(69, 114, 148)||##||600||##||Tinos||##||0||##||0||##||15||##||0||##||1||##||20||##||rgb(69, 114, 148)||##||rgb(69, 114, 148)||##||100||##||Amaranth||##||2||##||0||##||0||##||1||##||20||##||rgb(69, 114, 148)||##||rgb(69, 114, 148)||##||100||##||Amaranth||##||2||##||0||##||0||##||rgba(0, 158, 226, 1)||##||rgba(7, 144, 204, 0.8)||##||13||##||25||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||400||##||uppercase||##||110||##||Arimo||##||center||##||center||##||0px||##||rgb(255, 255, 255)||##||rgb(255, 255, 255)||##||0||##||20||##||10||##||||##||Save";
     } else if ($_POST['style'] == 'counter-07') {
@@ -79,7 +79,7 @@ $icons = array(
     <div class="anc-6310-padding-15">
       <div class="anc-6310-col-3">
         <div class="anc-6310-counter-01">
-          <div class="anc-6310-counter-01-top-container" style="background-image: url('https://wpmart.org/wp-content/uploads/anc/work-completed.png');">
+          <div class="anc-6310-counter-01-top-container" style="background-image: url('https://i.postimg.cc/hP8twJ2y/work-completed.png');">
             <div class="anc-6310-counter-01-top-inner-wrap">
               <div class="anc-6310-counter-01-count-title">work completed</div>
             </div>
@@ -87,14 +87,13 @@ $icons = array(
           <div class="anc-6310-counter-01-bottom-container">
             <div class="anc-6310-counter-01-count-content">
               <div class="anc-6310-counter-01-count-content-inner">
-                <div 
-                  class="anc-6310-counter-01-count-number anc-6310-animated-counter-01 anc-6310-counter-number" 
+                <div
+                  class="anc-6310-counter-01-count-number anc-6310-animated-counter-01 anc-6310-counter-number"
                   id="anc-6310-01-1"
-                  data-anc-6310-start="0" 
-                  data-anc-6310-end="1200" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2"
-                ></div>
+                  data-anc-6310-start="0"
+                  data-anc-6310-end="1200"
+                  data-anc-6310-decimal="0"
+                  data-anc-6310-duration="2"></div>
               </div>
             </div>
             <div class="anc-6310-counter-01-count-subtitle"> Aolaboraively eenable vira niche markets Compe evsculate funcnal mndshare through forand goaloriented project.</div>
@@ -104,7 +103,7 @@ $icons = array(
       </div>
       <div class="anc-6310-col-3">
         <div class="anc-6310-counter-01">
-          <div class="anc-6310-counter-01-top-container" style="background-image: url('https://wpmart.org/wp-content/uploads/anc/line-of-codes.jpeg');">
+          <div class="anc-6310-counter-01-top-container" style="background-image: url('https://i.postimg.cc/Z5VKbGtw/line-of-codes.jpg');">
             <div class="anc-6310-counter-01-top-inner-wrap">
               <div class="anc-6310-counter-01-count-title">lines of code</div>
             </div>
@@ -112,13 +111,12 @@ $icons = array(
           <div class="anc-6310-counter-01-bottom-container">
             <div class="anc-6310-counter-01-count-content">
               <div class="anc-6310-counter-01-count-content-inner">
-                <div class="anc-6310-counter-01-count-number anc-6310-animated-counter-01 anc-6310-counter-number" 
+                <div class="anc-6310-counter-01-count-number anc-6310-animated-counter-01 anc-6310-counter-number"
                   id="anc-6310-01-2"
-                  data-anc-6310-start="100" 
-                  data-anc-6310-end="10" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2"
-                ></div>
+                  data-anc-6310-start="100"
+                  data-anc-6310-end="10"
+                  data-anc-6310-decimal="0"
+                  data-anc-6310-duration="2"></div>
               </div>
             </div>
             <div class="anc-6310-counter-01-count-subtitle"> Aolaboraively eenable vira niche markets Compe evsculate funcnal mndshare through forand goaloriented project.</div>
@@ -128,7 +126,7 @@ $icons = array(
       </div>
       <div class="anc-6310-col-3">
         <div class="anc-6310-counter-01">
-          <div class="anc-6310-counter-01-top-container" style="background-image: url('https://wpmart.org/wp-content/uploads/anc/cups-of-coffee.png');">
+          <div class="anc-6310-counter-01-top-container" style="background-image: url('https://i.postimg.cc/ZRyTL0Bb/cups-of-coffee.png');">
             <div class="anc-6310-counter-01-top-inner-wrap">
               <div class="anc-6310-counter-01-count-title">cups of coffee</div>
             </div>
@@ -136,11 +134,11 @@ $icons = array(
           <div class="anc-6310-counter-01-bottom-container">
             <div class="anc-6310-counter-01-count-content">
               <div class="anc-6310-counter-01-count-content-inner">
-                <div class="anc-6310-counter-01-count-number anc-6310-animated-counter-01 anc-6310-counter-number" 
+                <div class="anc-6310-counter-01-count-number anc-6310-animated-counter-01 anc-6310-counter-number"
                   id="anc-6310-01-3"
-                  data-anc-6310-start="1" 
-                  data-anc-6310-end="9.45" 
-                  data-anc-6310-decimal="2" 
+                  data-anc-6310-start="1"
+                  data-anc-6310-end="9.45"
+                  data-anc-6310-decimal="2"
                   data-anc-6310-duration="2"></div>
               </div>
             </div>
@@ -166,93 +164,89 @@ $icons = array(
     <div class="anc-6310-padding-15">
       <div class="anc-6310-counter-02-paralax">
         <div class="anc-6310-counter-02-common-overlay">
-        <iframe src='https://www.youtube.com/embed/2L515SmPbRw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=2L515SmPbRw&mute=1&allowfullscreen=1&allow=accelerometer&autoplay=1&rel=0' frameborder='0' allowfullscreen></iframe>
-        
-        <div class="anc-6310-counter-02-wrap">
-          <div class="anc-6310-col-4">
-            <div class="anc-6310-counter-02">
-              <div class="anc-6310-counter-02-icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <div class="anc-6310-counter-02-count-content">
-                <div class="anc-6310-counter-02-count-content-inner">
-                <div 
-                  class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number" 
-                  id="anc-6310-02-1"
-                  data-anc-6310-start="100" 
-                  data-anc-6310-end="1000" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2"
-                ></div>
+          <iframe src='https://www.youtube.com/embed/2L515SmPbRw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=2L515SmPbRw&mute=1&allowfullscreen=1&allow=accelerometer&autoplay=1&rel=0' frameborder='0' allowfullscreen></iframe>
+
+          <div class="anc-6310-counter-02-wrap">
+            <div class="anc-6310-col-4">
+              <div class="anc-6310-counter-02">
+                <div class="anc-6310-counter-02-icon">
+                  <i class="fas fa-globe"></i>
                 </div>
+                <div class="anc-6310-counter-02-count-content">
+                  <div class="anc-6310-counter-02-count-content-inner">
+                    <div
+                      class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number"
+                      id="anc-6310-02-1"
+                      data-anc-6310-start="100"
+                      data-anc-6310-end="1000"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2"></div>
+                  </div>
+                </div>
+                <div class="anc-6310-counter-02-count-title">worldwide centers</div>
               </div>
-              <div class="anc-6310-counter-02-count-title">worldwide centers</div>
             </div>
-          </div>
-          <div class="anc-6310-col-4">
-            <div class="anc-6310-counter-02">
-              <div class="anc-6310-counter-02-icon">
-                <i class="fas fa-book-open"></i>
-              </div>
-              <div class="anc-6310-counter-02-count-content">
-                <div class="anc-6310-counter-02-count-content-inner">
-                <div 
-                  class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number" 
-                  id="anc-6310-02-2"
-                  data-anc-6310-start="0" 
-                  data-anc-6310-end="1200" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2"
-                ></div>
+            <div class="anc-6310-col-4">
+              <div class="anc-6310-counter-02">
+                <div class="anc-6310-counter-02-icon">
+                  <i class="fas fa-book-open"></i>
                 </div>
+                <div class="anc-6310-counter-02-count-content">
+                  <div class="anc-6310-counter-02-count-content-inner">
+                    <div
+                      class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number"
+                      id="anc-6310-02-2"
+                      data-anc-6310-start="0"
+                      data-anc-6310-end="1200"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2"></div>
+                  </div>
+                </div>
+                <div class="anc-6310-counter-02-count-title">courses involved</div>
               </div>
-              <div class="anc-6310-counter-02-count-title">courses involved</div>
             </div>
-          </div>
-          <div class="anc-6310-col-4">
-            <div class="anc-6310-counter-02">
-              <div class="anc-6310-counter-02-icon">
-                <i class="fas fa-university"></i>
-              </div>
-              <div class="anc-6310-counter-02-count-content">
-                <div class="anc-6310-counter-02-count-content-inner">
-                <div 
-                  class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number" 
-                  id="anc-6310-02-3"
-                  data-anc-6310-start="1000" 
-                  data-anc-6310-end="120" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2"
-                ></div>
+            <div class="anc-6310-col-4">
+              <div class="anc-6310-counter-02">
+                <div class="anc-6310-counter-02-icon">
+                  <i class="fas fa-university"></i>
                 </div>
+                <div class="anc-6310-counter-02-count-content">
+                  <div class="anc-6310-counter-02-count-content-inner">
+                    <div
+                      class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number"
+                      id="anc-6310-02-3"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="120"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2"></div>
+                  </div>
+                </div>
+                <div class="anc-6310-counter-02-count-title">campus building</div>
               </div>
-              <div class="anc-6310-counter-02-count-title">campus building</div>
             </div>
-          </div>
-          <div class="anc-6310-col-4">
-            <div class="anc-6310-counter-02">
-              <div class="anc-6310-counter-02-icon">
-                <i class="fas fa-user-graduate"></i>
-              </div>
-              <div class="anc-6310-counter-02-count-content">
-                <div class="anc-6310-counter-02-count-content-inner">
-                <div 
-                  class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number" 
-                  id="anc-6310-02-4"
-                  data-anc-6310-start="5" 
-                  data-anc-6310-end="500.25" 
-                  data-anc-6310-decimal="2" 
-                  data-anc-6310-duration="2"
-                ></div>
+            <div class="anc-6310-col-4">
+              <div class="anc-6310-counter-02">
+                <div class="anc-6310-counter-02-icon">
+                  <i class="fas fa-user-graduate"></i>
                 </div>
+                <div class="anc-6310-counter-02-count-content">
+                  <div class="anc-6310-counter-02-count-content-inner">
+                    <div
+                      class="anc-6310-counter-02-count-number anc-6310-animated-counter-02 anc-6310-counter-number"
+                      id="anc-6310-02-4"
+                      data-anc-6310-start="5"
+                      data-anc-6310-end="500.25"
+                      data-anc-6310-decimal="2"
+                      data-anc-6310-duration="2"></div>
+                  </div>
+                </div>
+                <div class="anc-6310-counter-02-count-title">No. Of Graduates</div>
               </div>
-              <div class="anc-6310-counter-02-count-title">No. Of Graduates</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-        </div>
     <div class="anc-6310-counter-list">
       Counter 2
       <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-02">Create Counter</button>
@@ -268,70 +262,70 @@ $icons = array(
   <div class="anc-6310-row anc-6310-6310_number-counterstyle-boxed">
     <div class="anc-6310-padding-15">
       <div class="anc-6310-counter-03-paralax">
-        <div class="anc-6310-counter-03-common-overlay">       
+        <div class="anc-6310-counter-03-common-overlay">
           <iframe src='https://www.youtube.com/embed/2L515SmPbRw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=2L515SmPbRw&mute=1&allowfullscreen=1&allow=accelerometer&autoplay=1&rel=0' frameborder='0' allowfullscreen></iframe>
-        <div class="anc-6310-counter-03-wrap">
-          <div class="anc-6310-col-4">
-            <div class="anc-6310-counter-03">
-              <div class="anc-6310-counter-03-featured-item">
-              <span><i class="fas fa-play"></i></span>
-              </div>
-              <div class="anc-6310-counter-03-count-content-inner">
-                <div class="anc-6310-counter-03-count-content">
-                <div class="anc-6310-counter-03-count-number anc-6310-animated-counter-03 anc-6310-counter-number" 
-                  id="anc-6310-03-1"
-                  data-anc-6310-start="0" 
-                  data-anc-6310-end="800" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
+          <div class="anc-6310-counter-03-wrap">
+            <div class="anc-6310-col-4">
+              <div class="anc-6310-counter-03">
+                <div class="anc-6310-counter-03-featured-item">
+                  <span><i class="fas fa-play"></i></span>
                 </div>
-                </div>
+                <div class="anc-6310-counter-03-count-content-inner">
+                  <div class="anc-6310-counter-03-count-content">
+                    <div class="anc-6310-counter-03-count-number anc-6310-animated-counter-03 anc-6310-counter-number"
+                      id="anc-6310-03-1"
+                      data-anc-6310-start="0"
+                      data-anc-6310-end="800"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
+                  </div>
 
-                <div class="anc-6310-counter-03-count-title">video player</div>
+                  <div class="anc-6310-counter-03-count-title">video player</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="anc-6310-col-4">
-            <div class="anc-6310-counter-03">
-              <div class="anc-6310-counter-03-featured-item">
-                <span><i class="fas fa-music"></i></span>
-              </div>
-              <div class="anc-6310-counter-03-count-content">
-                <div class="anc-6310-counter-03-count-content-inner">
-                <div class="anc-6310-counter-03-count-number anc-6310-animated-counter-03 anc-6310-counter-number" 
-                  id="anc-6310-03-2"
-                  data-anc-6310-start="1" 
-                  data-anc-6310-end="9.45" 
-                  data-anc-6310-decimal="2" 
-                  data-anc-6310-duration="2">
+            <div class="anc-6310-col-4">
+              <div class="anc-6310-counter-03">
+                <div class="anc-6310-counter-03-featured-item">
+                  <span><i class="fas fa-music"></i></span>
                 </div>
+                <div class="anc-6310-counter-03-count-content">
+                  <div class="anc-6310-counter-03-count-content-inner">
+                    <div class="anc-6310-counter-03-count-number anc-6310-animated-counter-03 anc-6310-counter-number"
+                      id="anc-6310-03-2"
+                      data-anc-6310-start="1"
+                      data-anc-6310-end="9.45"
+                      data-anc-6310-decimal="2"
+                      data-anc-6310-duration="2">
+                    </div>
+                  </div>
                 </div>
+                <div class="anc-6310-counter-03-count-title">Music Player</div>
               </div>
-              <div class="anc-6310-counter-03-count-title">Music Player</div>
             </div>
-          </div>
-          <div class="anc-6310-col-4">
-            <div class="anc-6310-counter-03">
-              <div class="anc-6310-counter-03-featured-item">
-                <span><i class="fas fa-camera"></i></span>
-              </div>
-              <div class="anc-6310-counter-03-count-content">
-                <div class="anc-6310-counter-03-count-content-inner">
-                <div class="anc-6310-counter-03-count-number anc-6310-animated-counter-03 anc-6310-counter-number" 
-                  id="anc-6310-03-3"
-                  data-anc-6310-start="1000" 
-                  data-anc-6310-end="10" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
+            <div class="anc-6310-col-4">
+              <div class="anc-6310-counter-03">
+                <div class="anc-6310-counter-03-featured-item">
+                  <span><i class="fas fa-camera"></i></span>
                 </div>
+                <div class="anc-6310-counter-03-count-content">
+                  <div class="anc-6310-counter-03-count-content-inner">
+                    <div class="anc-6310-counter-03-count-number anc-6310-animated-counter-03 anc-6310-counter-number"
+                      id="anc-6310-03-3"
+                      data-anc-6310-start="1000"
+                      data-anc-6310-end="10"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
+                  </div>
                 </div>
+                <div class="anc-6310-counter-03-count-title">Photography</div>
               </div>
-              <div class="anc-6310-counter-03-count-title">Photography</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <div class="anc-6310-counter-list">
       Counter 3
@@ -353,11 +347,11 @@ $icons = array(
             <div class="anc-6310-counter-04-top-inner-wrap">
               <div class="anc-6310-counter-04-count-content">
                 <div class="anc-6310-counter-04-count-content-inner">
-                  <div class="anc-6310-counter-04-count-number anc-6310-animated-counter-04 anc-6310-counter-number" 
+                  <div class="anc-6310-counter-04-count-number anc-6310-animated-counter-04 anc-6310-counter-number"
                     id="anc-6310-04-1"
-                    data-anc-6310-start="0" 
-                    data-anc-6310-end="1000" 
-                    data-anc-6310-decimal="0" 
+                    data-anc-6310-start="0"
+                    data-anc-6310-end="1000"
+                    data-anc-6310-decimal="0"
                     data-anc-6310-duration="2">
                   </div>
                 </div>
@@ -377,13 +371,13 @@ $icons = array(
             <div class="anc-6310-counter-04-top-inner-wrap">
               <div class="anc-6310-counter-04-count-content">
                 <div class="anc-6310-counter-04-count-content-inner">
-                    <div class="anc-6310-counter-04-count-number anc-6310-animated-counter-04 anc-6310-counter-number" 
-                      id="anc-6310-04-2"
-                      data-anc-6310-start="1" 
-                      data-anc-6310-end="500" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
-                    </div>
+                  <div class="anc-6310-counter-04-count-number anc-6310-animated-counter-04 anc-6310-counter-number"
+                    id="anc-6310-04-2"
+                    data-anc-6310-start="1"
+                    data-anc-6310-end="500"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
               </div>
               <div class="anc-6310-counter-04-count-title">CONFIGURATIONS</div>
@@ -401,11 +395,11 @@ $icons = array(
             <div class="anc-6310-counter-04-top-inner-wrap">
               <div class="anc-6310-counter-04-count-content">
                 <div class="anc-6310-counter-04-count-content-inner">
-                  <div class="anc-6310-counter-04-count-number anc-6310-animated-counter-04 anc-6310-counter-number" 
+                  <div class="anc-6310-counter-04-count-number anc-6310-animated-counter-04 anc-6310-counter-number"
                     id="anc-6310-04-3"
-                    data-anc-6310-start="1000" 
-                    data-anc-6310-end="99.99" 
-                    data-anc-6310-decimal="2" 
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="99.99"
+                    data-anc-6310-decimal="2"
                     data-anc-6310-duration="2">
                   </div>
                 </div>
@@ -422,7 +416,7 @@ $icons = array(
     </div>
     <div class="anc-6310-counter-list">
       Counter 4 <span class='anc-6310-counter-pro'>(Available in pro only)</span>
-     <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-04">Create Counter</button>
+      <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-04">Create Counter</button>
     </div>
     <br class="anc-6310-clear" />
   </div>
@@ -452,12 +446,12 @@ $icons = array(
                   <span class="span1"></span>
                   <div class="anc-6310-counter-05-count-content">
                     <div class="anc-6310-counter-05-count-content-inner">
-                      <div class="anc-6310-counter-05-count-number anc-6310-animated-counter-05 anc-6310-counter-number" 
-                      id="anc-6310-05-1"
-                      data-anc-6310-start="0" 
-                      data-anc-6310-end="1000" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                      <div class="anc-6310-counter-05-count-number anc-6310-animated-counter-05 anc-6310-counter-number"
+                        id="anc-6310-05-1"
+                        data-anc-6310-start="0"
+                        data-anc-6310-end="1000"
+                        data-anc-6310-decimal="0"
+                        data-anc-6310-duration="2">
                       </div>
                       <span class="anc-6310-counter-05-count-suffix">+</span>
                     </div>
@@ -482,12 +476,12 @@ $icons = array(
                   <span class="span1"></span>
                   <div class="anc-6310-counter-05-count-content">
                     <div class="anc-6310-counter-05-count-content-inner">
-                    <div class="anc-6310-counter-05-count-number anc-6310-animated-counter-05 anc-6310-counter-number" 
-                      id="anc-6310-05-2"
-                      data-anc-6310-start="100" 
-                      data-anc-6310-end="500" 
-                      data-anc-6310-decimal="0" 
-                      data-anc-6310-duration="2">
+                      <div class="anc-6310-counter-05-count-number anc-6310-animated-counter-05 anc-6310-counter-number"
+                        id="anc-6310-05-2"
+                        data-anc-6310-start="100"
+                        data-anc-6310-end="500"
+                        data-anc-6310-decimal="0"
+                        data-anc-6310-duration="2">
                       </div>
                       <span class="anc-6310-counter-05-count-suffix">+</span>
                     </div>
@@ -512,11 +506,11 @@ $icons = array(
                   <span class="span1"></span>
                   <div class="anc-6310-counter-05-count-content">
                     <div class="anc-6310-counter-05-count-content-inner">
-                      <div class="anc-6310-counter-05-count-number anc-6310-animated-counter-05 anc-6310-counter-number" 
+                      <div class="anc-6310-counter-05-count-number anc-6310-animated-counter-05 anc-6310-counter-number"
                         id="anc-6310-05-3"
-                        data-anc-6310-start="1000" 
-                        data-anc-6310-end="9.99" 
-                        data-anc-6310-decimal="2" 
+                        data-anc-6310-start="1000"
+                        data-anc-6310-end="9.99"
+                        data-anc-6310-decimal="2"
                         data-anc-6310-duration="2">
                       </div>
                       <span class="anc-6310-counter-05-count-suffix">+</span>
@@ -532,7 +526,7 @@ $icons = array(
     </div>
     <div class="anc-6310-counter-list">
       Counter 5 <span class='anc-6310-counter-pro'>(Available in pro only)</span>
-     <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-05">Create Counter</button>
+      <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-05">Create Counter</button>
     </div>
     <br class="anc-6310-clear" />
   </div>
@@ -549,13 +543,13 @@ $icons = array(
           <div class="anc-6310-counter-06-icon">
             <i class="fa fa-briefcase"></i>
             <div class="anc-6310-counter-06-number anc-6310-animated-counter-06">
-                <div class="anc-6310-counter-06-count-number anc-6310-animated-counter-06 anc-6310-counter-number" 
-                  id="anc-6310-06-1"
-                  data-anc-6310-start="0" 
-                  data-anc-6310-end="1200" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
-                </div>
+              <div class="anc-6310-counter-06-count-number anc-6310-animated-counter-06 anc-6310-counter-number"
+                id="anc-6310-06-1"
+                data-anc-6310-start="0"
+                data-anc-6310-end="1200"
+                data-anc-6310-decimal="0"
+                data-anc-6310-duration="2">
+              </div>
             </div>
           </div>
           <div class="anc-6310-counter-06-count-title">clients worked</div>
@@ -567,13 +561,13 @@ $icons = array(
           <div class="anc-6310-counter-06-icon">
             <i class="fa fa-trophy"></i>
             <div class="anc-6310-counter-06-number anc-6310-animated-counter-06">
-              <div class="anc-6310-counter-06-count-number anc-6310-animated-counter-06 anc-6310-counter-number" 
-                  id="anc-6310-06-2"
-                  data-anc-6310-start="1000" 
-                  data-anc-6310-end="100" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
-                </div>
+              <div class="anc-6310-counter-06-count-number anc-6310-animated-counter-06 anc-6310-counter-number"
+                id="anc-6310-06-2"
+                data-anc-6310-start="1000"
+                data-anc-6310-end="100"
+                data-anc-6310-decimal="0"
+                data-anc-6310-duration="2">
+              </div>
             </div>
           </div>
           <div class="anc-6310-counter-06-count-title">Awards Winner</div>
@@ -585,12 +579,12 @@ $icons = array(
           <div class="anc-6310-counter-06-icon">
             <i class="fas fa-image"></i>
             <div class="anc-6310-counter-06-number anc-6310-animated-counter-06">
-            <div class="anc-6310-counter-06-count-number anc-6310-animated-counter-06 anc-6310-counter-number" 
-                  id="anc-6310-06-3"
-                  data-anc-6310-start="100" 
-                  data-anc-6310-end="9.99" 
-                  data-anc-6310-decimal="2" 
-                  data-anc-6310-duration="2">
+              <div class="anc-6310-counter-06-count-number anc-6310-animated-counter-06 anc-6310-counter-number"
+                id="anc-6310-06-3"
+                data-anc-6310-start="100"
+                data-anc-6310-end="9.99"
+                data-anc-6310-decimal="2"
+                data-anc-6310-duration="2">
               </div>
             </div>
           </div>
@@ -601,7 +595,7 @@ $icons = array(
     </div>
     <div class="anc-6310-counter-list">
       Counter 6 <span class='anc-6310-counter-pro'>(Available in pro only)</span>
-     <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-06">Create Counter</button>
+      <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-06">Create Counter</button>
     </div>
     <br class="anc-6310-clear" />
   </div>
@@ -615,87 +609,87 @@ $icons = array(
     <div class="anc-6310-padding-15">
       <div class="anc-6310-counter-07-paralax">
         <div class="anc-6310-counter-07-common-overlay">
-        <iframe src='https://www.youtube.com/embed/Ss1Nml_0yBY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=Ss1Nml_0yBY&mute=1&allowfullscreen=1&allow=accelerometer&autoplay=1&rel=0' frameborder='0' allowfullscreen></iframe>
-        <div class="anc-6310-counter-07-wrap">
-          <div class="anc-6310-col-4 no-ml-mr-0">
-            <div class="anc-6310-counter-07">
-              <div class="anc-6310-counter-07-count-content">
-                <div class="anc-6310-counter-07-count-content-inner">
-                  <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                    id="anc-6310-07-1"
-                    data-anc-6310-start="100" 
-                    data-anc-6310-end="550" 
-                    data-anc-6310-decimal="0" 
-                    data-anc-6310-duration="2">
+          <iframe src='https://www.youtube.com/embed/Ss1Nml_0yBY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=Ss1Nml_0yBY&mute=1&allowfullscreen=1&allow=accelerometer&autoplay=1&rel=0' frameborder='0' allowfullscreen></iframe>
+          <div class="anc-6310-counter-07-wrap">
+            <div class="anc-6310-col-4 no-ml-mr-0">
+              <div class="anc-6310-counter-07">
+                <div class="anc-6310-counter-07-count-content">
+                  <div class="anc-6310-counter-07-count-content-inner">
+                    <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                      id="anc-6310-07-1"
+                      data-anc-6310-start="100"
+                      data-anc-6310-end="550"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
+                    <span class="anc-6310-counter-07-count-suffix">+</span>
                   </div>
-                  <span class="anc-6310-counter-07-count-suffix">+</span>
                 </div>
+                <div class="anc-6310-counter-07-count-title">attendees</div>
+                <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
               </div>
-              <div class="anc-6310-counter-07-count-title">attendees</div>
-              <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
             </div>
-          </div>
-          <div class="anc-6310-col-4 no-ml-mr-0">
-            <div class="anc-6310-counter-07">
-              <div class="anc-6310-counter-07-count-content">
-                <div class="anc-6310-counter-07-count-content-inner">
-                  <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                    id="anc-6310-07-2"
-                    data-anc-6310-start="0" 
-                    data-anc-6310-end="1000" 
-                    data-anc-6310-decimal="0" 
-                    data-anc-6310-duration="2">
+            <div class="anc-6310-col-4 no-ml-mr-0">
+              <div class="anc-6310-counter-07">
+                <div class="anc-6310-counter-07-count-content">
+                  <div class="anc-6310-counter-07-count-content-inner">
+                    <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                      id="anc-6310-07-2"
+                      data-anc-6310-start="0"
+                      data-anc-6310-end="1000"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
+                    <span class="anc-6310-counter-07-count-suffix">+</span>
                   </div>
-                  <span class="anc-6310-counter-07-count-suffix">+</span>
                 </div>
+                <div class="anc-6310-counter-07-count-title">speakers</div>
+                <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
               </div>
-              <div class="anc-6310-counter-07-count-title">speakers</div>
-              <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
             </div>
-          </div>
-          <div class="anc-6310-col-4 no-ml-mr-0">
-            <div class="anc-6310-counter-07">
-              <div class="anc-6310-counter-07-count-content">
-                <div class="anc-6310-counter-07-count-content-inner">
-                  <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                    id="anc-6310-07-3"
-                    data-anc-6310-start="999" 
-                    data-anc-6310-end="100" 
-                    data-anc-6310-decimal="0" 
-                    data-anc-6310-duration="2">
+            <div class="anc-6310-col-4 no-ml-mr-0">
+              <div class="anc-6310-counter-07">
+                <div class="anc-6310-counter-07-count-content">
+                  <div class="anc-6310-counter-07-count-content-inner">
+                    <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                      id="anc-6310-07-3"
+                      data-anc-6310-start="999"
+                      data-anc-6310-end="100"
+                      data-anc-6310-decimal="0"
+                      data-anc-6310-duration="2">
+                    </div>
+                    <span class="anc-6310-counter-07-count-suffix">+</span>
                   </div>
-                  <span class="anc-6310-counter-07-count-suffix">+</span>
                 </div>
+                <div class="anc-6310-counter-07-count-title">hours</div>
+                <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
               </div>
-              <div class="anc-6310-counter-07-count-title">hours</div>
-              <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
             </div>
-          </div>
-          <div class="anc-6310-col-4 no-ml-mr-0">
-            <div class="anc-6310-counter-07">
-              <div class="anc-6310-counter-07-count-content">
-                <div class="anc-6310-counter-07-count-content-inner">
-                  <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                    id="anc-6310-07-4"
-                    data-anc-6310-start="100" 
-                    data-anc-6310-end="9.955" 
-                    data-anc-6310-decimal="2" 
-                    data-anc-6310-duration="2">
+            <div class="anc-6310-col-4 no-ml-mr-0">
+              <div class="anc-6310-counter-07">
+                <div class="anc-6310-counter-07-count-content">
+                  <div class="anc-6310-counter-07-count-content-inner">
+                    <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                      id="anc-6310-07-4"
+                      data-anc-6310-start="100"
+                      data-anc-6310-end="9.955"
+                      data-anc-6310-decimal="2"
+                      data-anc-6310-duration="2">
+                    </div>
+                    <span class="anc-6310-counter-07-count-suffix">+</span>
                   </div>
-                  <span class="anc-6310-counter-07-count-suffix">+</span>
                 </div>
+                <div class="anc-6310-counter-07-count-title">exciting stalls</div>
+                <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
               </div>
-              <div class="anc-6310-counter-07-count-title">exciting stalls</div>
-              <div class="anc-6310-counter-07-count-subtitle"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
     <div class="anc-6310-counter-list">
       Counter 7 <span class='anc-6310-counter-pro'>(Available in pro only)</span>
-     <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-07">Create Counter</button>
+      <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-07">Create Counter</button>
     </div>
     <br class="anc-6310-clear" />
   </div>
@@ -712,12 +706,12 @@ $icons = array(
           <div class="anc-6310-counter-08">
             <div class="anc-6310-counter-08-featured-item"><i class="far fa-building"></i></div>
             <div class="anc-6310-counter-08-count-content anc-6310-animated-counter-08">
-              <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                  id="anc-6310-08-1"
-                  data-anc-6310-start="0" 
-                  data-anc-6310-end="1200" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
+              <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                id="anc-6310-08-1"
+                data-anc-6310-start="0"
+                data-anc-6310-end="1200"
+                data-anc-6310-decimal="0"
+                data-anc-6310-duration="2">
               </div>
             </div>
             <div class="anc-6310-counter-08-count-title">university buildings</div>
@@ -728,12 +722,12 @@ $icons = array(
           <div class="anc-6310-counter-08">
             <div class="anc-6310-counter-08-featured-item"><i class="fas fa-users"></i></div>
             <div class="anc-6310-counter-08-count-content anc-6310-animated-counter-08">
-              <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                  id="anc-6310-08-2"
-                  data-anc-6310-start="1000" 
-                  data-anc-6310-end="500" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
+              <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                id="anc-6310-08-2"
+                data-anc-6310-start="1000"
+                data-anc-6310-end="500"
+                data-anc-6310-decimal="0"
+                data-anc-6310-duration="2">
               </div>
             </div>
             <div class="anc-6310-counter-08-count-title">students Enrolled</div>
@@ -743,15 +737,15 @@ $icons = array(
         <div class="anc-6310-col-4">
           <div class="anc-6310-counter-08">
             <div class="anc-6310-counter-08-featured-item"><i class="fas fa-list-alt"></i></div>
-              <div class="anc-6310-counter-08-count-content anc-6310-animated-counter-08">
-                <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                  id="anc-6310-08-3"
-                  data-anc-6310-start="500" 
-                  data-anc-6310-end="9.944" 
-                  data-anc-6310-decimal="3" 
-                  data-anc-6310-duration="2">
-                </div>
+            <div class="anc-6310-counter-08-count-content anc-6310-animated-counter-08">
+              <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                id="anc-6310-08-3"
+                data-anc-6310-start="500"
+                data-anc-6310-end="9.944"
+                data-anc-6310-decimal="3"
+                data-anc-6310-duration="2">
               </div>
+            </div>
             <div class="anc-6310-counter-08-count-title">Courses Included</div>
             <div class="anc-6310-counter-08-count-subtitle">Give us a brief description of the service that you</div>
           </div>
@@ -760,12 +754,12 @@ $icons = array(
           <div class="anc-6310-counter-08">
             <div class="anc-6310-counter-08-featured-item"><i class="fas fa-book"></i></div>
             <div class="anc-6310-counter-08-count-content anc-6310-animated-counter-08">
-              <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number" 
-                  id="anc-6310-08-4"
-                  data-anc-6310-start="10" 
-                  data-anc-6310-end="800" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
+              <div class="anc-6310-counter-07-count-number anc-6310-animated-counter-07 anc-6310-counter-number"
+                id="anc-6310-08-4"
+                data-anc-6310-start="10"
+                data-anc-6310-end="800"
+                data-anc-6310-decimal="0"
+                data-anc-6310-duration="2">
               </div>
             </div>
             <div class="anc-6310-counter-08-count-title">No Of Books</div>
@@ -776,7 +770,7 @@ $icons = array(
     </div>
     <div class="anc-6310-counter-list">
       Counter 8 <span class='anc-6310-counter-pro'>(Available in pro only)</span>
-     <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-08">Create Counter</button>
+      <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-08">Create Counter</button>
     </div>
     <br class="anc-6310-clear" />
   </div>
@@ -794,13 +788,13 @@ $icons = array(
             <div class="anc-6310-counter-09-icon"><i class="fa fa-list-alt"></i></div>
             <div class="anc-6310-counter-09-inner-wrap">
               <div class="anc-6310-counter-09-number anc-6310-animated-counter-09">
-              <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number" 
+                <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number"
                   id="anc-6310-09-1"
-                  data-anc-6310-start="10" 
-                  data-anc-6310-end="1000" 
-                  data-anc-6310-decimal="0" 
+                  data-anc-6310-start="10"
+                  data-anc-6310-end="1000"
+                  data-anc-6310-decimal="0"
                   data-anc-6310-duration="2">
-              </div>
+                </div>
               </div>
               <div class="anc-6310-counter-09-title">projects completed</div>
             </div>
@@ -811,13 +805,13 @@ $icons = array(
             <div class="anc-6310-counter-09-icon"><i class="fa fa-trophy"></i></div>
             <div class="anc-6310-counter-09-inner-wrap">
               <div class="anc-6310-counter-09-number anc-6310-animated-counter-09">
-              <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number" 
+                <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number"
                   id="anc-6310-09-2"
-                  data-anc-6310-start="1000" 
-                  data-anc-6310-end="500" 
-                  data-anc-6310-decimal="0" 
+                  data-anc-6310-start="1000"
+                  data-anc-6310-end="500"
+                  data-anc-6310-decimal="0"
                   data-anc-6310-duration="2">
-              </div>
+                </div>
               </div>
               <div class="anc-6310-counter-09-title">Awards Winner</div>
             </div>
@@ -828,13 +822,13 @@ $icons = array(
             <div class="anc-6310-counter-09-icon"><i class="fa fa-briefcase"></i></div>
             <div class="anc-6310-counter-09-inner-wrap">
               <div class="anc-6310-counter-09-number anc-6310-animated-counter-09">
-              <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number" 
+                <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number"
                   id="anc-6310-09-3"
-                  data-anc-6310-start="10" 
-                  data-anc-6310-end="55.55" 
-                  data-anc-6310-decimal="0" 
+                  data-anc-6310-start="10"
+                  data-anc-6310-end="55.55"
+                  data-anc-6310-decimal="0"
                   data-anc-6310-duration="2">
-              </div>
+                </div>
               </div>
               <div class="anc-6310-counter-09-title">Clients Worked</div>
             </div>
@@ -845,13 +839,13 @@ $icons = array(
             <div class="anc-6310-counter-09-icon"><i class="far fa-star"></i></div>
             <div class="anc-6310-counter-09-inner-wrap">
               <div class="anc-6310-counter-09-number anc-6310-animated-counter-09">
-              <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number" 
+                <div class="anc-6310-counter-09-count-number anc-6310-animated-counter-09 anc-6310-counter-number"
                   id="anc-6310-09-4"
-                  data-anc-6310-start="0" 
-                  data-anc-6310-end="11.256" 
-                  data-anc-6310-decimal="3" 
+                  data-anc-6310-start="0"
+                  data-anc-6310-end="11.256"
+                  data-anc-6310-decimal="3"
                   data-anc-6310-duration="2">
-              </div>
+                </div>
               </div>
               <div class="anc-6310-counter-09-title">5 Star Ratings</div>
             </div>
@@ -861,7 +855,7 @@ $icons = array(
     </div>
     <div class="anc-6310-counter-list">
       Counter 9 <span class='anc-6310-counter-pro'>(Available in pro only)</span>
-     <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-09">Create Counter</button>
+      <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-09">Create Counter</button>
     </div>
     <br class="anc-6310-clear" />
   </div>
@@ -880,13 +874,13 @@ $icons = array(
               <div class="anc-6310-counter-10-icon"><i class="fa fa-list-alt"></i></div>
               <div class="anc-6310-counter-10-inner-wrap">
                 <div class="anc-6310-counter-10-number anc-6310-animated-counter-10">
-                <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number" 
-                  id="anc-6310-10-1"
-                  data-anc-6310-start="1000" 
-                  data-anc-6310-end="500" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
-                </div>
+                  <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number"
+                    id="anc-6310-10-1"
+                    data-anc-6310-start="1000"
+                    data-anc-6310-end="500"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-10-title">projects completed</div>
               </div>
@@ -897,13 +891,13 @@ $icons = array(
               <div class="anc-6310-counter-10-icon"><i class="fas fa-align-left"></i></div>
               <div class="anc-6310-counter-10-inner-wrap">
                 <div class="anc-6310-counter-10-number anc-6310-animated-counter-10">
-                <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number" 
-                  id="anc-6310-10-2"
-                  data-anc-6310-start="500" 
-                  data-anc-6310-end="55.45" 
-                  data-anc-6310-decimal="2" 
-                  data-anc-6310-duration="2">
-                </div>
+                  <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number"
+                    id="anc-6310-10-2"
+                    data-anc-6310-start="500"
+                    data-anc-6310-end="55.45"
+                    data-anc-6310-decimal="2"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-10-title">works completed</div>
               </div>
@@ -914,13 +908,13 @@ $icons = array(
               <div class="anc-6310-counter-10-icon"><i class="fas fa-cloud-download-alt"></i></div>
               <div class="anc-6310-counter-10-inner-wrap">
                 <div class="anc-6310-counter-10-number anc-6310-animated-counter-10">
-                <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number" 
-                  id="anc-6310-10-3"
-                  data-anc-6310-start="10" 
-                  data-anc-6310-end="1000" 
-                  data-anc-6310-decimal="0" 
-                  data-anc-6310-duration="2">
-                </div>
+                  <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number"
+                    id="anc-6310-10-3"
+                    data-anc-6310-start="10"
+                    data-anc-6310-end="1000"
+                    data-anc-6310-decimal="0"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-10-title">download completed</div>
               </div>
@@ -931,13 +925,13 @@ $icons = array(
               <div class="anc-6310-counter-10-icon"><i class="fas fa-tasks"></i></div>
               <div class="anc-6310-counter-10-inner-wrap">
                 <div class="anc-6310-counter-10-number anc-6310-animated-counter-10">
-                <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number" 
-                  id="anc-6310-10-4"
-                  data-anc-6310-start="500" 
-                  data-anc-6310-end="99.94" 
-                  data-anc-6310-decimal="2" 
-                  data-anc-6310-duration="2">
-                </div>
+                  <div class="anc-6310-counter-10-count-number anc-6310-animated-counter-10 anc-6310-counter-number"
+                    id="anc-6310-10-4"
+                    data-anc-6310-start="500"
+                    data-anc-6310-end="99.94"
+                    data-anc-6310-decimal="2"
+                    data-anc-6310-duration="2">
+                  </div>
                 </div>
                 <div class="anc-6310-counter-10-title">Projects In Progress</div>
               </div>
@@ -948,7 +942,7 @@ $icons = array(
     </div>
     <div class="anc-6310-counter-list">
       Counter 10 <span class='anc-6310-counter-pro'>(Available in pro only)</span>
-     <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-10">Create Counter</button>
+      <button type="button" class="anc-6310-btn-success anc_6310_choosen_style" id="counter-10">Create Counter</button>
     </div>
     <br class="anc-6310-clear" />
   </div>
@@ -983,7 +977,6 @@ $icons = array(
   </div>
 
   <script>
-    
     jQuery(document).ready(function() {
       jQuery("body").on("click", ".anc_6310_choosen_style", function() {
         jQuery("#anc-6310-modal-add").fadeIn(500);
@@ -1008,6 +1001,6 @@ $icons = array(
           });
         }
       });
-   
+
     });
   </script>
