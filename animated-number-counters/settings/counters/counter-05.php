@@ -78,9 +78,9 @@
                                                 <div class="anc-6310-counter-05-count-content">
                                                     <div class="anc-6310-counter-05-count-prefix"><?php echo esc_html($numbersPosition[0]); ?></div>
                                                     <div class="anc-6310-counter-05-count-content-inner">
-                                                        <div class="anc-6310-counter-05-count-number anc-6310-counter-number" id="anc-6310-<?php echo esc_attr("{$styleId}-{$allCounter['id']}"); ?>" data-anc-6310-start="<?php echo esc_attr($allCounter['numbers_start']); ?>" data-anc-6310-end="<?php echo esc_attr($allCounter['numbers']); ?>" data-anc-6310-decimal="<?php echo esc_attr(anc_6310_number_format($allCounter['numbers'])); ?>" data-anc-6310-duration="<?php echo esc_attr(isset($cssData['animation_duration']) && $cssData['animation_duration'] !== '' ? $cssData['animation_duration'] / 1000 : .5); ?>" 
+                                                        <div class="anc-6310-counter-05-count-number anc-6310-counter-number" id="anc-6310-<?php echo esc_attr("{$styleId}-{$allCounter['id']}"); ?>" data-anc-6310-start="<?php echo anc_6310_convert_numbers($allCounter['numbers_start']); ?>" data-anc-6310-end="<?php echo anc_6310_convert_numbers($allCounter['numbers']); ?>"  data-anc-6310-decimal="<?php echo esc_attr(anc_6310_number_format($allCounter['numbers'])); ?>" data-anc-6310-duration="<?php echo esc_attr(isset($cssData['animation_duration']) && $cssData['animation_duration'] !== '' ? $cssData['animation_duration'] / 1000 : .5); ?>" 
                                                         data-anc-6310-thousands-separator="<?php echo esc_attr(isset($cssData['thousands_separator']) ? anc_6310_special_character_remove($cssData['thousands_separator']) : ''); ?>">
-                                                        <?php echo anc_6310_special_character_remove($allCounter['numbers_start']); ?>
+                                                        <?php echo anc_6310_convert_numbers($allCounter['numbers_start']); ?>
                                                         </div>
                                                     </div>
                                                     <?php anc_6310_counter_suffix($numbersPosition[1], $templateId); ?>

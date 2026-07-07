@@ -1219,6 +1219,7 @@ ul.anc-6310-nav li {
   margin-bottom: 0;
   display: table-cell;
   position: relative;
+  z-index: 1;
 }
 ul.anc-6310-nav li a {
   padding: 10px 7px;
@@ -1388,3 +1389,73 @@ ul.anc-6310-nav li ul li:hover a, ul.anc-6310-nav li ul li a.anc-6310-active{
   font-size: medium;
   font-weight: 600;
 }
+/*#######################  Notification Style Start ################### */
+.anc-6310-notifications {
+  margin: 25px 0 0;
+}
+.anc-6310-notice {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 20px 10px;
+  border: 1px solid #c9dbff;
+  border-radius: 10px;
+  background: #f4f8ff;
+  box-sizing: border-box;
+}
+.anc-6310-content {
+  flex: 1;
+}
+.anc-6310-content p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+.anc-6310-content a {
+  color: #3366ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.anc-6310-content a:hover {
+  text-decoration: underline;
+}
+.anc-6310-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  min-width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #046b04;
+  color: #fff;
+}
+.anc-6310-icon .dashicons {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+}
+.anc-6310-notice-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #8c8f94;
+  cursor: pointer;
+}
+.anc-6310-notice-close .dashicons {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+.anc-6310-notice-close:hover {
+  color: #d63638;
+}
+.anc-6310-content p:first-of-type {
+  font-weight: 400; /* normal */
+}
+/*#######################  Notification Style End ################### */

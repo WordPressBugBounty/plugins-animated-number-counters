@@ -3,7 +3,7 @@ Contributors: WpMart
 Tags: number counter, animated numbers, Animated Number Counters, animated numbers counter, animated counter
 Requires at least: 6.0
 Tested up to: 7.0
-Stable tag: 2.7
+Stable tag: 2.8
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -174,6 +174,9 @@ Tags: number counter, animated numbers, Animated Number Counters, animated numbe
 
 
 == Changelog ==
+= 2.8 =
+* FEATURE – Fixed number issue
+
 = 2.7 =
 * FEATURE – Fixed image path
 
