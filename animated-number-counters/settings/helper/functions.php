@@ -2090,7 +2090,7 @@ if (!function_exists('anc_6310_check_license')) {
             'type'       => 'anc'
       );
 
-      $anc_6310_selected_server = wpm_6310_get_option('wpm_6310_selected_server');
+      $anc_6310_selected_server = anc_6310_get_option('anc_6310_selected_server');
       $url = $anc_6310_selected_server == 2 || $anc_6310_selected_server == '2' ? "https://demo.tcsesoft2.com/" : "https://demo.tcsesoft.com/";
       $response = wp_remote_post($url, array("body" => $api_params));
 

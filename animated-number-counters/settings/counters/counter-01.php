@@ -58,7 +58,8 @@
                                 if ($counter_order) {
                                     foreach ($counter_order as $coid) {
                                         if ($coid) {
-                                            $results = $wpdb->get_row("SELECT * FROM $counter_table WHERE id={$coid}", ARRAY_A);
+                                            $coid = absint($coid);
+                                            $results = $wpdb->get_row($wpdb->prepare("SELECT * FROM {$counter_table} WHERE id = %d",$coid), ARRAY_A);
                                             if ($results) {
                                                 $allCounters[] = $results;
                                             }
