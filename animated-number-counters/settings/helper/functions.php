@@ -309,6 +309,7 @@ function anc_6310_add_or_edit_counter($id, $counter_order, $style_name)
       if ($counter_order) {
          foreach ($counter_order as $co) {
             if ($co) {
+               $co = absint($co);
                $results = $wpdb->get_row("SELECT * FROM $counter_table where id='" . $co . "'", ARRAY_A);
                if ($results) {
                   $counterArray[] = $results;

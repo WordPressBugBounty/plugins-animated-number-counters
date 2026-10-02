@@ -36,6 +36,7 @@ if (strpos($template_path, $allowed_path) !== 0 || !file_exists($template_path))
     if ($counter_order) {
         foreach ($counter_order as $cid) {
             if ($cid != '') {
+                $cid = absint($cid);
                 $results = $wpdb->get_row("SELECT * FROM $counter_table WHERE id={$cid}", ARRAY_A);
                 if ($results) {
                     $allCounters[] = $results;
