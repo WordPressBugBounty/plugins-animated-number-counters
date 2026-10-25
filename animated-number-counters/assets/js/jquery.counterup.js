@@ -25,7 +25,7 @@ window.addEventListener('scroll', debounceEvents(function () {
       if (!el.classList.contains('anc-6310-animation-completed')) {
         el.classList.add('anc-6310-animation-completed');
 
-        const separator = el.getAttribute('data-anc-6310-thousands-separator') || ',';
+        const separator = el.getAttribute('data-anc-6310-thousands-separator') || '';
         const start = parseFloat(el.getAttribute("data-anc-6310-start") || '0');
         const end = parseFloat(el.getAttribute("data-anc-6310-end") || '0');
         const decimal = parseInt(el.getAttribute("data-anc-6310-decimal") || '0');
